@@ -83,7 +83,7 @@ a:hover { color: blue;
 
 .remark-slide-content h2 {
   color:              var(--ind-purple);
-  font-size:          1.6em;
+  font-size:          1.4em;
   font-weight:        600;
   line-height:        0.3em;
   /*letter-spacing:     0.02em;*/
@@ -108,7 +108,7 @@ a:hover { color: blue;
 /*-- PARAGRAPH TEXT --*/
 .remark-slide-content {
   font-size:          2em;
-  line-height:        1.4em;
+  line-height:        1em;
   letter-spacing:     0.01em;
 }
 
@@ -280,12 +280,12 @@ content: "";
 /*-- Headings --*/
 .title-slide h1 {
   color:              var(--ind-purple);
-  font-size:          3.0em;
+  font-size:          2.0em;
   font-weight:        600;
 }
 .title-slide h2 {
   color:              var(--ind-purple);
-  font-size:          2.0em;
+  font-size:          1.4em;
   font-weight:        400;
 }
 

@@ -1,5 +1,5 @@
 ---
-title: <br> An introduction to pediatric brain injury <br> <br>
+title: <br> An introduction to pediatric brain injury <br>
 subtitle:
 author:  Dr. Chris Gaskell  <br> <br> <br><br> Clinical Psychologist
 institute:  <br> <br> IndigoNeuro
