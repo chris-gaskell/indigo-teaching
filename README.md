@@ -1,1 +1,1 @@
-# indigo-teaching
+# uos-sced
