@@ -1,9 +1,8 @@
 ---
-title: Title
+title: <br> An introduction to pediatric brain injury <br> <br>
 subtitle:
-  - Subtitle
-author:  Dr. Chris Gaskell
-institute: IndigoNeuro
+author:  Dr. Chris Gaskell  <br> <br> <br><br> Clinical Psychologist
+institute:  <br> <br> IndigoNeuro
 date: false
 output:
   xaringan::moon_reader:
@@ -105,57 +104,48 @@ background-size: 425px 100%
 - How I got into this.
 
 ---
+class: left
+background-image: url(https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpbGR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60)
+background-position: 100% 0%
+background-size: 40% 100%
 
 #  What to Expect 
 
-<a href="https://sced-for-clinicians.netlify.app/resources/"> Resources </a>
-
+.large[
 + Introduction & Hopes
-	+ What is brain injury:
-	+ What is it?
-	+ Causes of brain injury
-	+ What is the impact?
-	+ The neuropsychological aspects
-	+ Community rehabilitation
-Your questions:
-What to Expect
-.pull-left[![](assets/img/image2.jpeg)]
++ What is brain injury:
++ What is it?
++ Causes of brain injury
++ What is the impact?
++ The neuropsychological aspects
++ Community rehabilitation
++ Your questions:
+]
 
-.pull-right[![](assets/img/image1.png)]
+---
+class: inverse, middle, center
 
+# What is brain injury?
 
+---
+background-image: url(logo.png)
+background-position: top right
+background-size: 250px 130px
+layout: true
+---
+class: left
+background-image: url(assets/img/image3.jpeg)
+background-position: 100%
+background-size: contain
+
+#  Causes of <br>Brain Injury 
 
 
 ---
-class: inverse
-
-.Large[.my-purple[est]]
-.my-red[wee]
-
----
-#  Causes of Brain Injury 
-
-.pull-left[![](assets/img/image3.jpeg)]
-
-.pull-right[![](assets/img/image1.png)]
-
-
----
-
-![](assets/img/image4.jpeg)
-
-
----
-#  Parts of the brain 
-
-.pull-left[![](assets/img/image5.jpeg)]
-
-.pull-right[![](assets/img/image1.png)]
-
-
----
-
-
+class:
+background-image: url(assets/img/image4.jpeg)
+background-position: 50% 50%
+background-size: 100% 100%
 
 ---
 #  Primary difficulties resulting from brain injury 

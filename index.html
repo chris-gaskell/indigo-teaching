@@ -1,520 +1,299 @@
-<!DOCTYPE html>
-<html lang="" xml:lang="">
-  <head>
-    <title>Title</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Dr. Chris Gaskell" />
-    <link href="libs/remark-css/default.css" rel="stylesheet" />
-    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
-    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
-    <link rel="stylesheet" href="custom.css" type="text/css" />
-    <link rel="stylesheet" href="fonts.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" type="text/css" />
-  </head>
-  <body>
-    <textarea id="source">
-class: top, center, title-slide
-
-# Title
-## Subtitle
-### Dr. Chris Gaskell
-### IndigoNeuro
-
----
-
-background-image: url(logo.png)
-background-position: top right
-background-size: 250px 130px
-layout: true
----
-
-class:
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-1. Bullet 1
-2. Bullet 2
-
-This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph.
-
-
-----
-
-Here is a &lt;a href=""&gt;link&lt;/a&gt;
-
-.footnote[
-Here is a footer with a &lt;a href=""&gt;link&lt;/a&gt;
-]
-
-
----
-layout: false
-class: inverse
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-1. Bullet 1
-2. Bullet 2
-
-This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph. This is the first paragraph.
-
-----
-
-Here is a &lt;a href=""&gt;link&lt;/a&gt;
-
-.footnote[
-Here is a footer with a &lt;a href=""&gt;link&lt;/a&gt;
-]
-
-
-
----
-name: about-me
-class: about-me-slide, right, middle, center
-background-image: url(img/salford.jpg)
-background-position:-5% 50%
-background-size: 425px 100%
-
-
-&lt;img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1434417640920002563/ZS62zhXl_400x400.jpg" width="200px"/&gt;
-
-## Chris Gaskell
-
-## Clinical Psychologist
-
-.fade[Non-Epileptic Attack Disorder Service&lt;br&gt;Northern Care Alliance NHS Foundation Trust&lt;br&gt;Manchester, UK]
-
-[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt; chris-gaskell.com](https://chris-gaskell.com)
-[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"&gt;&lt;/path&gt;&lt;/svg&gt; @chris-gaskell92](https://twitter.com/chris-gaskell92)
-[&lt;svg viewBox="0 0 496 512" style="position:relative;display:inline-block;top:.1em;height:1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; @chris-gaskell](https://github.com/chris-gaskell)
-
-
-???
-- Introduction
-- How I got into this.
-
----
-
-#  What to Expect 
-
-&lt;a href="https://sced-for-clinicians.netlify.app/resources/"&gt; Resources &lt;/a&gt;
-
-+ Introduction &amp; Hopes
-	+ What is brain injury:
-	+ What is it?
-	+ Causes of brain injury
-	+ What is the impact?
-	+ The neuropsychological aspects
-	+ Community rehabilitation
-Your questions:
-What to Expect
-.pull-left[![](assets/img/image2.jpeg)]
-
-.pull-right[![](assets/img/image1.png)]
-
-
-
-
----
-class: inverse
-
-.Large[.my-purple[est]]
-.my-red[wee]
-
----
-#  Causes of Brain Injury 
-
-.pull-left[![](assets/img/image3.jpeg)]
-
-.pull-right[![](assets/img/image1.png)]
-
-
----
-
-![](assets/img/image4.jpeg)
-
-
----
-#  Parts of the brain 
-
-.pull-left[![](assets/img/image5.jpeg)]
-
-.pull-right[![](assets/img/image1.png)]
-
-
----
-
-
-
----
-#  Primary difficulties resulting from brain injury 
-
-+ Education
-	+ Missed learning due to hospitalisation.
-	+ Not reaching ARE.
-	+ Masking of difficulties
-	+ Academic potential may not be reached
-	+ Independence
-	+ Over-reliance on adults.
-	+ Loss of skills.
-	+ Retention of new learning.
-	+ Lack of confidence.
-	+ Social skills and relationships
-	+ Emotional
-	+ Self esteem
-	+ Frustration
-	+ Anxiety
-	+ Emotional dysregulation
-	+ Social
-	+ Difficulties unrecognized (invisible difficulty).
-	+ Visible difference.
-	+ Skills for making and managing relationships
-	+ Vulnerability
-	+ Difficulty with behaviour
-	+ Problems with thinking skills
-	+ Memory (short term, long term, working memory).
-	+ Executive functions (more later).
-	+ Paying attention.
-	+ Lack of insight.
-	+ Word finding difficulties.
-	+ Visual problems
-	+ Empathy and understanding others’ POV
-	+ Physical &amp; Medical
-	+ Hearing Impairment
-	+ Fine motor problems: poor handwriting
-	+ Gross motor problems: mobility, balance, co-ordination.
-![](assets/img/image1.png)
-
-
----
-#  Developmental trajectory and outcomes 
-
-Neuropsychological (executive processes) difficulties are also associated with difficulties in:
-Academic attainment - maths , literacy
-Emotion regulation – high prevalence of depression/anxiety
-Behavioural regulation – high prevalence of aggression/conduct
-Social communication
-Social participation – Family burden/stress
-Future independence in adulthood, future employment, risk of crime, risk of substance use, risk of mental health difficulties etc
-Around 50% of offenders report to have a previous ABI. Could be as high as 70%
-Suicide risk peaks 5-7 years post-injury.
-.pull-left[![](assets/img/image6.png)]
-
-.pull-right[![](assets/img/image1.png)]
-
-
----
-#  Plasticity vs. Vulnerability 
-
-‘Derails’ normal development as the brain continues to mature in the context of an injury.
-Deficits can emerge over time, as different cognitive functions come online
-( e.g., executive functions associated with the frontal lobes continue to develop into early adulthood).
-.pull-left[![](assets/img/image7.jpeg)]
-
-.pull-right[![](assets/img/image1.png)]
-
-
----
-#  Long term - Impact on life 
-
-School attendance and engagement:
-60% do poorly at school (Sariaslan et al, 2016)
-Exclusions/ alternative provision
-Criminal justice system (Williams et al, 2010 &amp; 15)
-Jobs, qualifications and future welfare:
-Less likely to progress to future study/work.
-80% more likely to receive disability benefits and 60% welfare benefits  (Sariaslan et al., 2016).
-More likely to be homeless (e.g., 48% in Leeds had a history of ABI; Disabilities Trust, 2010).
-Mental Health:
-overrepresentation of psychiatric conditions (Li &amp; Liu, 2013)
-Similar levels of mental health difficulties as CYP referred to CAMHS (Gracey &amp; Watson, 2014)
-Social Adjustment, isolation &amp; relationships:
-Many people with ABI report poor quality of life (Anderson et al, 2010)
-Poorer social adjustment, participation and greater social problems (Anderson et al, 2014)
-![](assets/img/image1.png)
-
-
----
-
-
-
----
-#  What are neuropsychological difficulties? 
-
-+ There is a large, diverse range of thinking skills/processes that we all have.
-	+ Many of these thinking skills can be grouped (called domains).
-Memory
-Language
-Perception
-Proprioception
-Attention
-Intelligence
-Interoception
-Executive functioning
-Cognitive Groups
-.pull-left[![](assets/img/image8.jpeg)]
-
-.pull-right[![](assets/img/image1.png)]
-
-
----
-#  EF is an umbrella term to describe a group of processes that contribute to the execution of purposeful and goal directed behavior. A bit like an executive in a company supervising complex and novel tasks. 
-
-Executive Functioning
-Working Memory
-Being able to hold information mind and manipulate it purposefully.
-Required for: Arithmetic, holding multiple instructions
-Planning
-Being able to plan a series of steps to complete a task and employ effective strategies.
-Required for: Project work, large self-directed tasks
-Inhibition
-Being able to resits urges and impulses.
-Required for: interpersonal skills, tasks requiring careful consideration, appropriate behaviour, prolonged concentration
-Self Monitoring
-Being able to observe own performance to guide subsequent behaviour.
-Required for: Problem solving
-Set Shifting
-Being able to adjust to new thinking when old thinking is not successful.
-Required for: Problem solving
-Regulation
-Being able to monitor and manage emotions and behaviour.
-Required for: Managing social demands and school pressures (essentially everything)
-
-
----
-#  Executive Functioning 
-
-Particularly vulnerable to injury
-Develop throughout childhood and adolescence
-Two main areas:
-Ventrolateral cortex: emotional and behavioural regulation
-Dorsolateral cortex: working memory, planning, organisation
-.pull-left[![](assets/img/image9.jpg)]
-
-.pull-right[![](assets/img/image1.png)]
-
-
----
-#  What might be signs of EF difficulty? 
-
-Forgets to complete ad-hoc homework task.
-Difficulty with complex/novel work that requires planning and switching tasks.
-Difficulty staying on task (particularly uninteresting tasks).
-Poor time management.
-Impulsive behavior and difficulty regulating emotions.
-When stuck on a problem unable to think of alternative solutions.
-Regular difficulty with peers.
-Not able to utilize feedback.
-Highly repetitive behaviors.
-Difficulty with motivation and self-direction.
-.pull-left[![](assets/img/image1.png)]
-
-.pull-right[![](assets/img/image10.jpeg)]
-
-
----
-#  Difficulties with Fatigue 
-
-Fatigue is different to being tired.
-It can be physical and mental fatigue and impacts upon cognitive functioning.
-Fatigue needs to be managed by:
-Taking regular breaks, either physical or mental rest.
-Not overloading with information.
-Embedding breaks into the daily routine.
-Understanding triggers for fatigue
-.pull-left[![](assets/img/image11.png)]
-
-.pull-right[![](assets/img/image1.png)]
-
-
----
-
-
----
-#  Ask children what they want(McCarron et al, 2019) 
-
-.pull-left[![](assets/img/image12.jpeg)]
-
-.pull-right[![](assets/img/image1.png)]
-
----
-#  Holistic approach 
-
-+ Rehabilitation psychology: Goal = optimising wellbeing and meaningful participation for individuals with disabilities in daily living (Dunn Ehde &amp; Wegener, 2016)
-	+ Occupational therapy: Identifying impairments on everyday, functional activities and working to help children overcome their difficulties and regain independence.
-How do we do this?
-+ Neuropsychological intervention: cognitive, behavioural, social, emotional applications.
-	+ OT intervention: to introduce strategies/ adaptations to everyday activities, including education.
-	+ Ecological rehab integrated into daily routines – appropriate to age and stage of brain development (e.g., Braga, 2016).
-	+ Within the meaningful setting of the family (shape relationships).
-	+ Empower families with knowledge.
-	+ Realistic expectations: short and long-term goals that are relevant to the specific child.
-	+ Focus on potential and successes, not losses.
-	+ Work between community, school and home: promoting consistent rehabilitation wherever possible.
-	+ Plan for the future (prognosis for abilities &gt; employment and social integration)
-![](assets/img/image1.png)
-
----
-#  Education after Brain Injury 
-
-Schools are a crucial part to rehabilitation however limited training provided for teachers about ABI: unsure how to support despite having skills and experience.
-Student can find it hard to process information.
-They find the curriculum demands very tiring.
-May have no idea where to start, especially if lots of instructions.
-Working without frequent prompts and guidance is difficult.
-May appear to not be trying - don’t use ‘obvious’ strategies such as turning to the page before.
-May have limited ability to draw on prior knowledge.
-Can be very literal and need very clear expectations.
-May be reluctant to ask for help and keen to be like their peers.
-Social and emotional issues become more apparent in teenage years.
-Inappropriate behaviour:
-Impulsivity and lack of control - may be labelled as ‘naughty’/’challenging’ when they have reduced control or are acting out of distress or lack of understanding
-Lack of initiation or empathy may be seen as ‘lazy’ or thoughtless
-.pull-left[![](assets/img/image13.jpeg)]
-
-.pull-right[![](assets/img/image1.png)]
-
----
-
-[chris@indigoneuro.co.uk](http://www.childbraininjurytrust.org.uk/)
-[www.childbraininjurytrust.org.uk](mailto:chris@indigoneuro.co.uk)
-[http://www.braininjuryhub.co.uk/](http://www.headway.org.uk/)
-[www.biausa.org/brain-injury-children.htm](http://www.biausa.org/brain-injury-children.htm)
-[www.headway.org.uk](http://www.braininjuryhub.co.uk/)
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create({
-"ratio": "16:9",
-"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>`\n",
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-(function() {
-  "use strict"
-  // Replace <script> tags in slides area to make them executable
-  var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container script'
-  );
-  if (!scripts.length) return;
-  for (var i = 0; i < scripts.length; i++) {
-    var s = document.createElement('script');
-    var code = document.createTextNode(scripts[i].textContent);
-    s.appendChild(code);
-    var scriptAttrs = scripts[i].attributes;
-    for (var j = 0; j < scriptAttrs.length; j++) {
-      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
-    }
-    scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-})();
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
+<!DOCTYPE HTML>
+
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Encrypted Report</title>
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <style>
+body {
+ margin: 0 auto; padding: 0 1em; max-width: 28em;
+ font-size: 110%; font-family: "Helvetica Neue", sans-serif;
+}
+p { color: #333; line-height: 1.3; }
+a { color: #2980b9; text-decoration: none; }
+
+input, button {
+ display: block; margin: 1em 0; box-sizing: border-box; width: 100%;
+ font-size: 100%;
+}
+input.error{ border-color: #c0392b; }
+button {
+ padding: .4em;
+ border: none; border-radius: .2em;
+ color: white; background-color: #2980b9;
+ cursor: pointer;
+}
+button:active { background-color: #1970a9; }
+button.error { background-color: #c0392b; }
+
+.hidden { display: none; }
+ </style>
+</head>
+<body>
+ <p>This file contains an encrypted document.</p>
+ <input type="password" id="key" placeholder="Enter the key."/>
+ <button id="submit">decrypt and download the document</button>
+ <p id="message"></p>
+ <script id="nonce" type="text/plain">7c6f0056c0674287c78f62821910bd2c7ef2f982be577a41</script>
+ <script id="encrypted" type="text/plain">e547ddaba431d71a71329cd1dfc0aac0cc086f5b82bca40e89b292786e2cec50185f53b3323dc15e8475fc72e0f4f328fd304bae90069ea991298d941038211050077253493cdd836a6494f41b488dc4184b0a895a42e13d25e632af48fcb9091a88b81353e7a108d558e7ff40b182c355b7526e3bc2d35b66db29dc4c79d3fb6341d5e8c83403238112e695c9c9f9ae15260b1e196029d424948fb2f66d51fc31a7b56815bf10704034be4a0225df47589a5800c185d0d45877b3b62a5b053548ef3c3d3924486a638bffad3708e4c907a03d0e0fe865c386a18bec1c7f697c1cb70af4ad8c111c6015c3486ed3796fbe40e7ca6dc679a408aabb324cf3abc3af5d6efc5196b4ad280304751e3462cef4a03fc9a6c12eac629cc73547e792563c7cdddab01e84ecc062930c2e061be1b793c18a887338a192ed6a14d93cc4cdc2699630bbe1f3cdc5355960f9858759122d6f7e9d881afdbb90e9f94ae001cdc7a94c6b155a02f2390aed22f9176798a56945ab2998c880bc9d27711b1d6ab50840011b54505680f9272576249be84b3192709f0c05ee5218bece5c42f923a9a9d6dc7468743c34d445cc23be5ea67c683aa77f1104ba13b85498a5fc41e0addb5b0930ee866c7432ca4634f64da24144375f65acb2e7f4a93c2331307f805c3cc70ef50620f7b7d692a8df2cf8133bbc46e3a36e47b9952411d2bf8da39bcb058c9d28f424c0ee979a4a81c27c0eeb91e7977cc4389e7561ba5bfc7215cdcbafea9b5039b44110bf660265b7f11791064290020760e60ab5a6987fe9584e4d48360a10d6fc4ed40e0ce80944078cc4c4fdbcf4153b72087763083e5a57f037802aaa0efca6381e0c25d00572b7153b8aa7bf16f807dfff87490a4ba163b917961c81d06ddc584bee910aa4fe03fbde3a211621378dedf2c6e26257e9665ce153a0faaa51cee4834a5072d72b0a10787920b2191d8f87999bd04eb7d9e01e1612c2f9a4d16160a94aaa79384297d1ea54e35bf71b1ca3e6b9b60d60c616b1cac13fef77c512781d08ae7bf18b8428b26b1f7ca1d2507d77b53f14edfd99277d596e9be4ef880ed2fa228d77d2a2de5fc26dba968cada8accdcbdc8c8c5e233b2e7dfa7eb80f55ef6302e0852d9826542d0211b5ba0b03fc030543088426280670eed44550e6d33d5332a4a74efbccd854369b04240b0ccb1ef30c5eeef11598e59d4dac1947eee8574d180effa52d90cd0ba93f878ce1d1ed5d17664311420fa2905fb6c7f1e00b25c286653e25af8a09e6c57959faf107f098c5e6794b98c2a87b4208702c44fd4247f1f73499bc66c84d43aecc627ea230f3009aafeabbc1a58ef37f3c514e9fe6e12610fb51ed6d616ddefe1243349348e3bfe673c7589982b230e0e836ca33d61bc13ead3e698fd9ca4caf5615f61b12447d302bf829523b7d17a82bac89391eb1928c2a09b5daa18ad926613647c5e50b403dc0fdd096ec1ca9f08bab9585dafb6d3dc6dcb6fb2efdaee1a813152325613cb375994b2cc4df1f9f2540bcce5bfb211daba721da3a2593eab5b512b8ee3d3a6176d92b55dd9c803ae96a0a98d848eb8216dd4b2835628e81acb37d70a33822694839c494c5cd5a3431b35f9664e9451c01fd330a10a9a494eb6bc4d7f4b05d02d3fda72109e88a42cff711ebf3d11a9a656972dd6b25a15a4f030ecda88aad6b7479a895fb5275a1adf53c262bf2038ea594f2550131c5bd4f4a8ea35f9a68df891181f04b25aac83d416a2c0b642abce64a53fd4aae7b9b20336305d8803679d5bd6a323ab41702161df9c4e5a30060ceceb67e0057ff764ce012bd522c138b3ed622ab75cb965f91c5b2f6276877b4af40aaa36086731555a91309685cb893077e056d3ea737b38d3380950370a3c19220107a039248907052521399cee85b18ea04a2ee2a7273c49742b5b96dd45e9bf36eb174c04cf7012fdb5bafbf5ec82db15ccb8728365437b2b01329a4622fadd5d28a338a612bdced7768dede736b87b8978f0b86c1d6d1082f0da821bf8a191c188470029269c30c331016835b18e1817fd28737886b67fa2a8a9505afcc576d1068d4c3aa4bf6284b12b7061ba1d805cad4e5bbd07c727d2130b96f882d8edcba682c18c656226bc38594cc0d0a011e9782b18b109b23e79d5eb74c7b167d50741e5dff549a25123be6f494e856fb77c1e7148b4cc51d0a74ab2e4c048ded069543181ca7befe0ff62bafa9472968235705f807c4d5f8277e05922ddd8ca5f7d820a6417bd2eb988429b13aafc15be4852753ae7a7bc7d76ae494cdc99ab7c39cac0fd3d7b121f1ffc8b3a432142c3c36364df8c996f7d99b6a604cdb09468e5d65d8bf88829bfe460d72f02645d4c9c64aafd18082df8eade71621f61abb6d4affa75cb30cca6523c382feb47863cb61c94994b6f19925de0ca301e35b19970b2db54c4161fb7bf0783bf50b5836ae4c5c41682bae11dfee843e34eb55ff0a84a597b034bae72470d1d28186384e0e3ad4ef252b5a919a39c5a1fb79088e1607e1a396753dc8d8176d8b2a489f96442811bf3bfc83934c60e8b4253aea326012078393020c0eb12f691a53a0f4efb1d5b54e4a028538c6d4845738f589788809bf56b4162b485b6c5549628dd454273fbdbd50fdd7aad9c6fa962476541f2aff01506a94016616fd9657b73f19afb80679085970b39c1a6c1ccca31f8203a46b1f08704c5b6759b566405df4076ca532a90a37538c57cb73160b7645e6ee5cac0fd68779bdf6c7f53ecb5d2db34b1bb380b7b6c07dbfd833349139a09e5effcbaee1bf766da83ac8eddb09fff4f0afa3bd4f0a29e18b1994637652675bfdaffda18a8123134704af668d56f8ad05a06df309b567ebf4742f0885bd2ec45b44d41adc951825c771f0f454f0f83297077690f214e412fe4ebec24d0262eb4747845511d0dddb6ed6a75e548a26bd404cf8d02a5fe2a452c73cd056ea1e9a573d8bd828e8977eb03b12740a23efb0afb2861b9caf5fe59e733d3c75f77896869970d2a486fbd72f85e1313a1ad72b77e6cc56c03f20bd6da56fe2a9d165cd09f8383ebb39e645e5e93d7a22431dacbbf212507637d7e7ff2f1503f486786545e91938c62daf4f6b83e4fd7d9ba47e22bc7c33b9da77883469c3a9822ad5733c69f6cf1344adaaf02e9fff9be8e873b77d221d097e74cb82e5c4ae8ac559d47dd5cabf1f9ddb31f6e13f7f7d77640682e1112d81f5e52c7bcb3db67180405965b841be6429ab039ae4b7466a179d7a2eed6b924e6c1cf7a13f0cf2470673af77491f5853444a5b00caac83e7bb04b2f66abea6afa4408026098cfcf79277372e0494bd278f588083c2a461685586a3ce867a57336b51d1300cdc3b4f2fde4ad0263f059c083f115e5d26df6ea8e892a894653e6c3abc6d3febb3c65124ff551ba84a2de538f2f6e96d54169555deb83f2acf6e3a1e6f5a415dafb3cc9e60f8af42e5a826f9458b492ac730d33abf5e52bff0dee42ee83f0cc48859ae4e248c12429e94f245419c018ca8430bdf9c03ca33f37c0aa1d5758a62c4e10729396cddd8465eb5e614dd3017a4996ef3bd47fbb9cdef7827c2c7fd8b5638a8be3cfdb5f5ed41b208239ef4a461da529c5295eaf60a130cee5113ff4fd2092253c74f881c8737e587a150732bd3b99d71e0280149186ba6e7f3e9f13b879f81d99557453df98944506e51aa76777869ec33b90173792af28f3416ac2bdea9e1792a78cdb0ec8a98badb740d384296ec3f7f9514abb979e217e1ead06cf8ded1c223e45eff47055ba491e9ccfc04221aa1593ccfe2ce230e27544fefac87f63c7de3de94a1b4a82b1d1f154ca2973ea800de7d91ef12c981329f21428d079ca074b039c92a4a53961816596158edcbfcb0027282df0b2837c399bf886b142aea73890eef1d92b93c8d6a80146d03094b5f2d8875f2d12af9a065088f5d9522884cf5dd8bf9a5b707f214731a879d89f57bb66738631a66c687f0c11f05ee0c4307021bb31594903c9384cc331ab3898a6f2a7fdafc014397ed9150bb693f6a0e1bf40594ab1a201b6a8ffde35f83274f6f9a7ca441a31fd1157be6abc7865d76258ec8ab8a1f9d6bd180bf96837db8cb83fd14f467fd5d867c1f76ca3f8d7bbeda8349fd5aafae30fcd365f368431bcc30a6c4b485ef9f76bf28a8752a21316211ed248063ebde17916b932013f39111acd38feaf79fb2e20326cf0f7dad1a535e986d5a41fd23837a6f33ecaa919ea33a8c888f4861b139935ba43913fddba4eaf4ad4dee0f068f870166bc211397089c370c100f1e0cf701e750f7883177df6b6e2646026cf6f596d25562cacaa7fb74c484cfc3d15b748b730014f89f59db85c2757b87c515ad080b15ce8210b5ba2107a7c10b621630184c1e76baf065a72e2565262e4aad51ad84fd6f4ce7a3c7912dd9e314ca793f83e51f3f52ab7cf07b150f916c8db9d164b93233167e1b9f5d5e8f6b3cdb6fcf4944d3783cfdea405e27f93b803c752c8197215a84891cd98c033c651ae0d4ed944864a7b923923e4000231763c8a86a51a0239823b55a600913ca56dd61e567e253cfd19a7e8d5a2278e8044ed6f57853f881836990ded6b9308528224e464e4c0b7f4db5aa136dd26b00fcfa899855ab75fa17858e00642f9fc9cf19d543ea82d52c106e024dc60cd245b569c829163eb9981b30ea4f54bd6be45168bfc420d1d347ab1db0aa2f5a2fb1bf1a8ac29268815ac01ed829cc761134738262768945513c8e5d5efc4a6c6e67e5f024c57142d8b107d84d9f57540a90801fb0e0c0d2839e657e08d6a1d7edd54e3faf187a7dab89e9af5c4e37519e05f96d37c0e069d572fb2cb55f4a82989ea0d9a38a8ff4b17a75896a05271964fa835bcb38ada3f098b625003626c1bf73a75c35322cca778ebced5c2fd302849fc5a723d648bc3b7ed462bc5123d11c7e982789a6c3e230f7458bafc0a3a49a8967a8f4583abef909b068b555aee9de1d686d4842e87b72311c0ff9010adf832017e8ab27381e4f98f9544bcd2b50c2ac684b95986b9ae9576468270670bfd05a1f24f2280329f6ecca70bf48c487e9da93150df4d381b641cf7501337a03271b3a9f59c917c43c77645a0a8d55f3de00db54dff4ad81ead7d6c08bacad0fd72bfdb9c2a84190bd56c91c5f1042e50e26ab853a77fc20aaf0016225cb600fc3083d27c4aa86c13d2f340efd1f057ad898b5af2f5487e34d0d752575194831651ce3fc004e68a86db74885e0be0ce186b0e0419a2af300a4f28965c8c32018b26ee7b8a54530a4695efc98971cf8f2e774e96db50308bc1e379eb50207c617da97d69259b3265c5afbd568fa18fd0b94c1a4ed06fd8204c9501e796eed34f5ed0fc66030d0e3dd5058b6f69affdc3dc1ba8fbdc2a36da528c44777c19627fe51ab258dd80df78b37155a118cfd9dfc669e94190d1f8dddb98cb5e9f8cb6d90a546b0b0c7ee57533a9443187ce293007cfe989d0cde1af3fa8c0178b9b98f411a4612c2ed648ddeb693fee651680162510aa9e50a0d142278d9d33607a688ca82afbe02e3321d5e16a5f068e037baf85f80f7a1a0934b35302ae3c5da708f1f2054efeef01aa3e565ab946ad2fb4a7a024ed577edd734e9796c6cd039cbec2790966e74bf16a801586f3d4e8ef639a820c4f196e8ef0eded25691431392e1fba5d9e7316134aa1cc7d250cfe6ba9cdd9dee4478c1c43b062e8ed2565f15dc716ff495bc6f516819c3c9d94164db9c31d3297eb1b02bbb61f7728ae376964e5ba661eac8bbb5ca1157d77148cd2212611679ae8e4dd9cc7db79d62d996e3f306647b52eb2c89c694e1a2dedaa3a38e6a49998f90473352e61fd880765bbaa11e7fc94807b8f9002ca41f63d0bf8dfb0041bce89e2d10c6b6a080d07bfcc1c8f6198606cbfffc97800b3087e48588664ead16f3d253c44a66904b23b5756fd61a22acc8be8d9706f60c74b12cf2731b0a3ee3f5350e3930ec63397e63aed06da7cc3282989679932ba277934cbfd5ee4dc75fedda655295d5823b997ed8e6a797b97e4ed594968031cedb98edd8d08d6a1d89aa2fe5d0028911fdc7d8f8a828e29e661c49af4cd2b1fa127f18c4e23ef54d83c7647462fa46a324a38c159fab9a3087756fb9c6c2b2517c9af815e7e27c40c57a1beaf0814ee46071311575a3736f9a10404924505e83bc4bf10ad896760cf3c440ff1c00c7311f330dff9aa205dbba7a88fd8124b38d7f7c363ebf0a005c6b446281cbf31db0f839bc6040c480355f01b78c16bc1f017eea8dc6ef043884bc2437d6ee602123ecfd49f8a34b8cbbc55a2e58384e55aeb3380f8097e928db90d1403c89384b2c4fb668bbe3241046bcaf0a9fa5a3787c9fa90eb953f78d308e1f1f2a107f840029a83b4a2720672fee360a0c5c105a0b701b20dce71981c5032228c35e24f57185c7f9adc7f5e662a4b21621a7727b1aba6af6622e6728feecb373098895a094293879512dba6721c79f58557eb5af900f899513cc886626f08e9fdb3d5b7a257ef54a0b9475ed9b26984b7f0439a8da3a438cb06637d5ccbbb56fc97f4298aadc1f1293e009d900f91bb9d61238e75e48e0d34b411cffaa8492677577cb53f2affd4783cbc550360122e69aa71118be3ff2cb4adf7177f00ee94e2827ee802d04a93b6d58062ceb2245ebbc73288abe12b46eb024ed92cd62b1fe2f94531a31ee6cca0c4c199c51cf9da1c1e5599e9e5a2e500ca46eafcd9290de0c7e86417620993905fc1e9bbdb47926eb22ffa26e61b1e4c7290544c3d6405e5a4abe6e6b5c0c7d4e9237d760228eba404b65ca1d5f9893a64afa731b3dd414d6d9dca6f5d2bc29d800d8c9c6dbf003945009d94e13cc91f851b504335b8a2685dbf65378dbee241ee338092a847e40ca19ded044bf019903979db53f12dbf9649ff5670e8adb2c7eaa144d23b0dd579cd759faef531718751a5bd2507bf8f5069149a638428ab36e768512ff3fae5325071e1ee4040b5a9ddbca59982541f9a16a88f31bd9923fd4c8d319067eed639e02a033ef8fea560956818d6a6c779396c69f511cdf1a507ecd4672650ab9cdae7b9e6c4c47998626744b14b361460d8c65e3fc01a3b5f7256f4fe98cfe2ed005cee88b3776b40743e0796f0d565820c22a32df88e0b50d61e342c967b49854ce60a2e97c3928c897b877cc9bc2f614f69adfe1bb53493a2cf98e8c27fc697e9a92b38729670f939d9249cbc244a578e7110ccc91774e51085fe6ededdcfa5505298964a1a758ba19b07c4eb5c66b9a0c2db0a77a2d2e9021e1db7eabc6474bab90dbaadaf73c8735f5d29871f8de9e6394b7b6162f8de7975fbe42a2cdd08078de958f1d7acf7097774e2faec974abad9eebc815f25fa3a847254335e681d4f61a82f822d48b5e5183527ccb56d4f4fa0b8a63c4f0df10c3ee60f8a45fa795f36a17d91f7545df1cea1c682897b3be5643c9f79d0d0ac2f84f9455b944496225c8d8cef326b3f989d4902c36b4b99998318023025366bb2bc0a5200277206e8b753a93dddf2fbd8c9cf366b2d04221cbdd250e2f1f35065a419008a001b73f025eadd66559bfd6312c2487e04c41acc5b3b492a903690499aeec15638f13218316c47bd436d7d4fb4f57d3645a1a352cdcc82edea3e0e960a1cc72a7d57534466458b4b0388f16f863fa7874866caffb980196ed9d1148c515a83f3d8290eff1fc770a7137e9c6e3b0fc50220122459d7de4d14b4ddb12b8d199ed7c5e8149aa56d0d3a61de62780285aeb117b064ddaf5734a8ae6f67bb9a45f06a4909a3ce57e24099b1237a71eebfa0f518d08213c5d193392c3f9771a78f089ea5ebaba4469eb9b30889135edf9a358a84abd5927e4872b374b6601932c0d8cc5ed3ae958aefcc36799c85771775d4f18599f52ee49b78269be1c6e2de0e8a9ceba13e7ab88a97cd0831dfda0f981373f303360b38b0a71f89938fcefb75614c6b29a0fc502c664e1b18a28b8c14b0df99ebd1bc9d1921d8d25a9871c0050fb9051e5aa7f15f3ba9ef44c7e7a90053608fba6490e955ed09dfad16074493fcfd01d0404f9aa041e4f7e9b5921d9e8b609de73c4e899067d1da82551d18921dfbd1103f7b2612040a9fb12ba6eb98f0bf2b51969cc457bd09970b59333b14a11a199ef87b1911df9cde38896d556c264fbabce486789a1616bceee2ab74a544bb077e625de953e169be334d2362d88d46661970706abfdeb4424a415bedf1bca03510245b8b0c1ebc17158034af61c085276b3bccad931016a385a4d326e92f144ab712f0d5f1c8b962eef3507405663e69d3df9a7c1e21a0313eb135af93749a08d8cfd2bd71b8036549e30b47b13c59bf01f5c2694be09a1932133db5a265df4783f3607b3928a1d2d57566d698518c494bc9975bce87cb3b255a4821bf93ffb6a022cab2a215ddc85c75cc97eb3ab096b511e62c2f52f9dd1808c1b7777815211ef2952fec6d337ff2ee27aafb8bbd5a8bfae430263086f6a0eb7258ef92733200e502fa1c0b17aefe8d8935ed84684ffacc5be7837fa53cf35beaf7c6760a7975039a836a0415091dd606468b541d2ccf99507b4b01eed535191a4e3f36fb7f5ba4cc21b929733a372be4d4a40383f136d77e3bf172558b67cf1ace6d3e7c6838482c1cd89af82761b850354251757ce4567452ed7b6d9a7945da8e300c47e9387060e17bf049d5adfe7c1e3146fffa1f1ab6419100e5b9c3294037ba4ced3af194f07578378c0af7c5a758ab28d6744208210b05f50f8a5d9824556792c9e4857362a2b8d0a21640e9d3276a946d9f8afc1fc560545a6b6c1b0e498a3e770b378f20634e57dab3641d7214b09a3d49be4f114af0ea90cb4881c40390a245b3f1863ed991a5d098498541fe40277b13451de48af24af076268a42309180b30799bdb871859aeb2354e400f0a2b928a87c7b642bacd832de06a0169272fe18148e01e7ade30f1dc60ecd632a90feb1d16f38a35f13966b6d4377be4e39ed4f3b0d535637ddb00d8ad70e4cc992591c99b1dd817204af340b4d670553f022c9bd52548e945f366c47287f4f14419e5436dcd04001604db586de5f39d975be926a71db60c568526607373d52fcbd52bc8834475554f444f19bafc04ddeab4d72c1da16a91d85ad392943560676adbaeefc165ef0b5d340389e1facb4716754c6dcd31049dbadac039ae0200f44d727aa936652a426e4f2135de27119687b4828e83eef6635befd1790f33fa7ef3bf0ae84728e844edbbf40cc54114971dc5404fcda8c992faa6466f3111824b123aff138ea960749253d9dd5b67620b96ed7b7c9a77a4fe084dab3d229d01c99c166a779cde98efb3e5ae8a30c51274ad85e39aaae49165f1bc51dd09cfc6bc20588521c15442be8e87f3c5f66edff0545fd7883d036deae814e5f284996b801ed00ec88c79323df8d980759d8038f5098009f71182e40360c655e245f36f6b15bceb5be5923a56d0a8e5da665453a09d224cd0562119dfdbb3e825eb07d5e52eaddf1e2d9493ae5ef8c70310050efa3fda47297afdc7cb2370935c091cf70672a391f4433dc8d15d4a7dd483f62eb41776d80ebf7613b81ead1dbdaa722f8eb7bdec1b29f130732f671cd49d379d6f202a179c4f1c5024c136b61fc062916b2473ec8c7bfedfa8a01651fcf19cdb58a8e746690fa3bacc6bad01e3d018d0a1873ab4ff5293044f8f329d95637b6b6d4ad409fffceedf70b7a4d19bfc94981f7daa59efd67f83f413b79f79eba5118117cfc7344cc97f09d847a4ab31393c43d0b5531ff0cf2173053d4d467c648819df419bd822774533ea9f6c7d4d272077e80b3928bf1fea94d58017469535a67381d4f4b128d36df88eaa549721d33761de10a047bb5636a15b82bb7c0b089e0fd9368aa604c52f9033e99707b1f94ed2499935de50ad93820737f2f58c18feaa5388aa48a12683f7909ba46dbe17a242f3f571d1c3701ad2094cccea09c48148d4d163f3dd83d94ac3b096c48033251d825ee43664e7e6ce87d761f97647c8692b11de944d06f2492613f6258b122e6178840e7ba0f1fc5842f4b766484e44868cff34555b69f11bb9f304087c8af243a746336f5ca1a8cf33f9f287d991c47ab6fe228a70850aea9776974911e56f742641d4dedd110c55de490f5d630b0ae1372f21f5a721803d708c4eb6e17ded6a5d9ded6e43b18ac8b84c10fd294aff8cf2c61a5441a391032807c796b9c48d1d56bb6521e06a571df37ebbff513c2eba69d6fee248e038189b4861f6b102d4f940b3e72ad1ca8eddc30b6f0e56ffdde8e732968744590ce3d1550aae72f0bd0ec6a581ccd90db164a0fce2b9a72f3a857d661c01aa8e4fb00add03b74231c1eabad20c084dc10923996d8f4b872ba72dd9235010a8618cabb7eb100261cf40dbd7abb70979f6e736213f45622cfbe4b5919d0bd123596274850847d981a71c774f751d88f7a9428dbf8f997cbeb3f4b65bb7cefc2c13576f3c600d151907ffec85bb63b543d65e6557c86c72f500a96f08eae96d46c116974bfa86016b184ec215608c6d90a4bd22f0453099718d27d30cb7efbf43243b830038e5fbc0823ae50e9d1096d016cd37ae4021f47d479d436189df7b6e7f1dcc04a730fcaf7f4671880078b26315b25a7aa72e9bb9f34c1006a685138354a19b343ffa7317d89f7f9a85d1cfabf0412e264d98607ccf606df6d9a7195e649727895f36982851be46b513440458a85801c2b8fad97023693651c443a37ed9ee4ce5335afea4ec039cc7b96c5e8953fae401b604d6f528c5b0631814c2b6353f4dc8f055c88b503bc8ab512db6bd15f6fd8fa2ceb0a12dd39ac0cc8a02afee789729ef9842e8c6e306e04ad938b8704043bc64381cafc5b8eeb817d173c3b320002e16be17524b75bb64dc1c21b7472c8112fcb637e86443a42694453cba308c6e541a60cad18c2378d39d59a824890c3fd6566f8f7a5f159a52ee33df308db79be812cc3b81b18bd44e9f956b96f4e25a5873c1e79e80d305871f16874a0d9b8bdd133fc5a9965d7c52fc855614a4cba9574d55bcd91d6fd493aa66005c75736267592dadd4c663a4b5b6016a8cf8cd9cf54d59dfd16daac564f6fff2f0ec47de4e6776e31da46ec5240771b7c4ce9744b309c66ede51cbda1a93a6007c92a35e17bad572566807a5d63251f195acde3220d486d318f636a37fcc4f0633fefac5201108113a8b718bcb95bf41852f83933743d454da99f2ac17c959bae239d779d59935e77ff93e5b4d938fe8857fd41fb847c750e6cce07baefa8c29a3488d902b5bd71026807f6b786a356ebb623f687654b68d820063d624acfbff495ffbf1a972c81a5fd421281e3dab1abb15b5cdd8369843b012626e2673a4b59d356a10f280175530a98cc0035d195f22181e2d2218c30a9eaedffe1146eb2311c955c07d9d5450f5ec30bea30fb57921f499c89e1770c07d18ced29927c2ef4fcbda3d5dcd1251cd92db834b9aa23553adbd939a1fd4ab2f6f89d73094e1dca7651474b772b214355801e9b7e5c2cd176599f2187052c1757a9a3b97cb4eb3808e07863f385206547dbb0de29209eaa6dc93b98b7dac1898bb36b5b7caa848f6b4ed3a05475a7704f88c734cc7c3ef4918613c30f8737b1352aa76c46e2c458a8effc642cede959bd7e6bffcdbe3752ac11fdf4bf1ac6cf127a2051917578029eed76ac4e200eae44cdec3ee9c38de326d8062d6caf3a025b8bbfd9c8f0b7e36d1ca3a305f89e81bf95809e6a597ef28b94f5d3422bc60ca6fc75941f45d0bfc6fbc29efe8b55dbc22686578cbb8250f64038e4fd19a3e7eaa40e26d3cc833441380939df455d29fae630ac7e1ae51317a24aa828aa16153359b776635b3a249171ea7484922326af180724c3d5bbe7a479c8872590fb1633b03490728986fea27b93803490fc1fe98f842ce790fc396a9aa9782d4eca812e51f26c92a4a9700bce9b7c0d6170f72e9f6d2885e994a7ddbb29bdbbaaf4c1ef6d384766c1f2fe39f2381bd8772c6a5ea94a256971331e24bcc66d6780a23c114426d257a33756b408b7fe8da777c6e672ca16d50e63c5d0f251948547c0d8f73c7d11dce9c01ac6bf9fce50495742bed2d7f553af51ff79802dd887faee2f22e30ac2e8eb87f420272c5a49abca4f9eeb893ad7aebfca9305348962aa057af9178d2dd09087c6fb8c3d1c0d91cbf04e47c0669d99ee79432476644d9e32e565304d92e2c9e24136142a1e1d8f90e0464a5733850f1d697c4aaf963499f9b057d1fa3360bb38cb5b37eec7bf4efe79a4d539aa89811e8a1e84e6b93948231a9adaa4f8f454fdcb24d21f2f3c56fbc5c67197083c78c29cfbde5685d75f9f000e6fb65a6a195a7e627441f0c87ec133d3a9eabbf2624670e04679960d54be41f40d0a621fd6d72c5ab44cd962c3543c1ce4a28f11bb7ff927efb4b86e1fa46b434e1f47ba67abfafead962be6497522dc906d88f6e0bb1450b9172c1ebc8e0d3d92a2a16bd5767d9ea9258b49570e9034d38911d295b27a2953a72afe735e5b7c3f9dec9460cd8da627cb02756889ca81bd6bea116994d13696d45e5e6fc817b3a12ce9118a3dd4508f2385c35147b92cc2d122f8ada656f2e39a2f83928a75650bf18a1d40df20ebe79e9c441f7c3e49a87e58ed5e3acaa4379f005f4df4707af8ec8a2c5dd95fa47a10ba24716f7dc67b2049e14e454c9a86a8d53c0da798ee5ea87bee3a014da026797ad3c651278767bd8815ecdc9aa89fb2ebcb3e9f1a922d6d64b05b537b1fd1fc44ba30bcc819d878ee7c390bd6f135e4ac6880e9e13bf4bc5a431a1ee34e9ad78051fcbd1dd6d36b8225a0b7fbf73f2487d9dd287e9b90c168d05c0b922c9231d5516029c1dce9f5f313ea561085fc4fe64478537bacbae89cf57ac061d8f388cb3400e6401198e7a9f5ccfe5592605d5dba7d90c223fd4994f1730bc579ce6b7785811d4f1e920860f0be3c96ce69ed998bb8063aef81aa2a9066e3028e7a03f43810511e2eaf65694dde3eb763dfe31d36065ad8a13c47940ab77c26e51049d7a90b06df37d88ec24742d97083a9e92e92bbb2ac29d7e1520119347cbb3bf77e4108cac1a47aa0410a1b11035a4ab1a6fc93b4a9be16cf1f10368e7ec4233bf6fce276f024f3fd911eeec3a931c562d4e48943501668c73a76b6f97ff2c0be51b3d0f87b199268bbfb8c0ddbfb69ce7d1787162d84cd522b104946750308f138805c82aa33634f2b982fcdec9345f506674d17cab8b55a24fc10728fd2c73d15d0db56ab7791b5dbaf2a502b3d48136a0af52082309762397a1d906f7961c5a378847493ba0ccedef80e9a32b69c554ff228006714e2efe10a4acdca6d7c75362357b98c19e5dd8bff91d0eede4f08733f5ab21382ae46d78eb1aa98a1fd5033244017f5c2a0c6321b20e4b379ec612cd82ff4f7570861ecd1c916079e71d028a712ba0cbf98ebc75770a8ff5acc8bdc2fc011d0e892289c7af78aac51002d2d197f4aefb1790d8eb7e9d6292acaf9869708d2b2f209d68d41dd5db19e6f481ee00865295533c983efd727b4f52bc1dbfeada272cc172c4de93e43e9237c761beec776ba633a14d13ed4454fd189339c728b87d524e56dee49de31ad4504b8375140d4ce360dded23e95920780c546f76a908413935e21407306ff166e53d35f3f9df33b3e874be1b7a8a683a3f22b5153bce7f76446237ca4badaf6edfdc4373eb6a6e2d49fe3e42d024c1b53d9b1388463cce2d6add1e0ac5083c52ada6e8136efc8b997b3b30b75e9139fa5898c414ea7f9f1045b27c4ed27938ba3f9f12f7ab56a9699bd27c310d0748206c1e0524de77122d458c23f4c57aca5afabc4d4890078cad50ee06f57de40a0c27b9cfb359f877512594ae1742a506154fdad7b1b2d09d9ba6bd0ed6b9183e9ae3d345c43aef3ac8b86e0bd7f005f84cfa51d96e529490005d484d02881ebc0b11df4ae1e9ab2653ced62599cc05cce8fb2980956bc45c06cfb3a7fa275f5713ba72e71abf2603bb4390a3b15f373d4b10b67860f7f645a31a6d1453b22c7f6123a7b99d286fd1dd3fc8287410253a934e7bdb6e29a806f3340da40d776823dad4c19623648b91ec3b0e2325d85919c87272120c477f9816601e6c35672090d16bd0ca6d4be5b761f12fc96f8386a57ec39dcd69f214338550f628459fd483afb8bd450aee5f17599d4eed251e0e46d1f7784239e07b54cc6b68327c55fabffe40b2cc483da53fbcc5efd1c8d36dcdde769e50d58f1f6cd7aebdd7010c0c5b61e9a2f992251017297940b506c2be1c5ecf0d1bf7a94c2f6da3208c2bb6adb1b3ea2eaa5533115ac263b3713f43479f23cb7b90caecfc4a9455af5b508d4101735cf8f464a93bf0a9217a7598f53c6e443ed2843134c50c6805697b62e6e7950d73507071b1cb592e1255afe19a61cfff1b4cc365f7f116c2f7818edf9be063fa3646d114cd114a84190fcc4c7456407d0c6c90cefdf2fba8128a526e0d98b2827e6457ffbc98366b85f2aa18e4ff2bacde392c4ed2c26278f6eafbdffd207663354a9036ab3fe71fe8ac87ac26b63d01dc786053f2dfd09972407953ad59d56e404fd23a250dfde86051a8862f8746e0263f40f8e88002ed02639bf8acec113f6ef8e4acba0351126fbe3dadd7c58386acc3ec4015b52cba2ef0482e662d9b5ffa969d576042a79a749edb6e4fb6a45789d4d88d58779cb5dc0ae04521890d714c30e0d15fcdbdb9cddc0ee29141a0e1dfeb63a3788a760f536f59aee0f9a4223b453c55f1127f2cc4c5e17eaaec1b0e005e357c19e18123a17fc1b947db73362dced64f5e628f23d93cb5096d00f9961829191edf71b2acdf3a4afff512d634af6ee344340be3ad4192f28dea32a936cbb4a433ee545148b1c6e8e3e24e6f228550e07df47125f4322e92fa872fcbce0e48d6c2f3b8afe4dfa6ea772a57144aec20c0d7a395445cefe8e256b08e365107868dd2623d3d8809b516d52b6820acd88a696ebd28ea70c9e3438662cabd9b3cb196d49412ce1eab27696e3c4f4b1c58cb8aabe0e645ac0b6882c3c26d698ae6554b5b93d440ba8fb03f27004c2788c432c1f448c4742cbd958fdc196f1eef13492019d18dc888fc126fd7743cab40eb96bc7efc16649a58c64cae69928cae1d401a76ddddbc21dac3b5e220f45afe649e73307696a2781c11917c441c5a756a6a10ae019583693a4c18bb8713f96dfc2944b725811ac66d72e206baa290df9084a51b3f1639cbd80dd653946068f20404852399f8a6d67d295a1f6d64059246a66803d25a8ee99ee73068df6acadf77ef64f8f947ffc6559db5aa4d1e5c89d3744ffa56897f8c2dd50924ba2681bd2259f3ff6f910e2e21f38aeb4ad52249977980e7698c5c3575bdca47b8d0af2870b31f1c1491fc2254ab7e119b2c7a664b7dd950a2a3577398ee43bea757f9c71f008d356971ab5ba7ebd1650fa5b5ef7c52be441ed1551611f4f6d01592a20362f346119b64043904add87d7e3c313629e9aa06f459173ef02f9462673184aac563daf842e4a25eb0dbc1d0108b5690931c83f9d90ae5fc3009eab686acf8c5f8c9987909e927940150f3638d11e2bc4e9a75544a9980c9dd32b137cd3778b63fd7955e68c861789f7d91176e5ad5e3c21d4581a23812c7b1b871b6ee663e8a3e127e36e52532d303d7c7034b7410352352b52fcb687cc5912d51d5a408fa20cafb190ad472d9d187f7492e069d973060235ee03aa7454e8f5523c88cb29b5f6f95acfe66ffb8fa8110010d2ffad17e4b2d871475493401efcdb0b3908b8ab57d7049926265184fc6beceb6bc51106650a046e5fe182b80b732aaf23ab60f65c51e26f8a5f313eee89607b6e4fb096798e1c0a053157aec4affeeb198dda956aae5f17eedab173f85c7df2c955f4aba6f9fc25467aaf637c9db226b0bba88d30da830d68e9ebbd2957339d4bf7f3ff239a6dfad8b25fc76e5c7976a86df3546c63a5e67c9aacdbacf1c4a2c614abc7ed5d52765aa0ffc41ae4c6c33f7dea1ff1f8878af861d2ec35832a43cf88b8a4f82f97315a6c8416df591563d69fa7d5c036a6eb0d7336b56c81049f3de5991a869905407531407ac16006d4d2576b8f33e6f2ef82e755395e57583e4985e6127f5101f0d8240dc975c148f659fe11d593d2f332ea4493755277332250ca39fe0262ff620027538ab4be60348402d23bec18f4dadd93e47dbdafd409df370348ab4a473ec9bbda60225c33702eb1dcb9b029da9355197292f595c539d73b3097627d1dd9b69486a2be794134a8d8f8749f2045744f698c3419172b76e38bb12dbb1e60ae1853a153e35e1dc33f5ccabc986f4acb4f2b695e3cb4e71212efb753d513dd8843e194aa6793f8d212f507d2035abffc9f30d03a5bf9a128c653940d45de1ffd7f8e9930dcefadde07b9d48e316662ee3eebee8c0c6fa63692e94035bd0279e5e47e3986dcd8cac900dbd49fc2a0d0f3ac74ba452ce833a9d80a40e4c9d3678ae60b86cc703f9bfac345961a53a497a959c398196b312f28f000ed258dc5acbfa4382db87def702e6af6a0d36c2ef0045ffe36a4005cbd38c6d627ead00f8b02a85acbac54d43c0967d75a08003623c4869f83e788fe9508ed4255f63a8ad83bd9d6009264da7e982e041cb2ee2d62451ab5e21b318756ed3e5e50767fbd21b9f08d5802296d9f29c709c5e94237f5a9d65150dd6da0c3d8d5dc80265c67fd0ab87ad57e4abbffae5f6cef697f7fd6222dde0a0961136e7a4ac04a92a1b39f054693397636e497a10d27e1e0cca06cdfe7acd24e01963e67eaa88b917185ae59009d52a10153c886071bff1707df34272fb2e2e2b604c0b62c844862d07518486610904131fccbbefa302d8f95b571021c81f882bc53f4f57aeb0725c118cc86748af72e09a21c932397188ed7320994a3bd241e463a87207f341fa714feb6b7c993b3dadea2a5434eb17fc386263ca463774b21b0e779ddd33f074892c6396d9ad2c396e91b329e091041c006b0657eff0a645c8912e0b998dcec1e1e97c60a9f5c66d20d56a38ffdc99bd7b2a377f093d780089da36c926094207491a84d60bd55aabbc79a9f3c236764126185d987dcf812ea1d9c836e3eea3e390ffe3b5d3212d9598c7dfa34ea28e7d1efeb2fd0ca7d46c84f1f5d73d2f8d78aefe1f823fe412e503f9079cceb3d4df6edce76f1d433762c52bdca73249bf1247a024708fc34112d7fd28a04c2bb78421ea92dbcc3ec4f7deeec77fc675a5314737a9db1226e577a72c1ea32332e808616bbb7c0fa223f20b81ac67acb325d875f627b3a2c30c2a37c2bb408519c4a6ed90d605799614356094bcdfaee5e792093849d50f103b225c8de44c0fa75094b22615cb54094b04a64ff840179b91fb91a83fb1ccb6416982d48f43193adee38b4d8b572b34e619df20ef305296ddf71306a242ac46e7f7f765eea20cf96fd0f0dabae4d4ed8545af7582bd8f31beac0ebbb84f50738dccaf1fd9df660ae548f199e332a3b207711331a127663bb22d88f597e74a829a9f8c919289fe4111c192120073b8aefd71c34344e7b5daa562ab4ffa079bcc2235a7df12c9496172d84282866520e8eee9acae392ae7b5fc4a3dd13412c6e6b5e6ae348068c59d87b9ab7bcc03a12aa9a7fe8f7e5e31d85e005df4a71aa7d1dd31d85c2bd163b373eb89ee9541deed62041e40a1d8e2b4d08be1ffb5c73b982f3519cb2d7fc5203bf0934f91264b969c735b63e91c12ec65595610757378e687f3324880cf49af3de80e0b6bec465de67d5fc30153f37a4548845ec91cc04a46aed4be612f637029d653011199a96f53072f405cfc19af74f6297aab800d30a0e1b3c85cc64992e9949a79bda92f6f8b495f0c950a5989b4b9645b4b600af41ff8cc3f81f60a0ba988812ebff6355a7a25fcb08d048e3006f1de4c183c82db48ceeaaa2016c4ebfbe7ff46f0fe48cd16830d054d6a6d5108c147f8d68621a9222cf31c0e305540a1db2373d437cfd9fbbe35d0e3b8be03c1abae1b81c678c3b2104865fa68a62ce55376bf4ef436a34cbfc5adf7ae78575e5331c46eaf05c9fc426b51d155639b72cb23a175ebfb76d3eff30cc445f651e0f17bf93dc10e7e33a97e7fa48c3dd28e5b5231ea81d3e4873f383322cfc41f99782739dd84714d98ea4fa0e8967b68a4b7b1e13d20069090bc714eba6cc5383ec51256233b5b87dc3d4014b644d13945caa417955b0deb53f2e9ac4b0a84c0d387a10c21e8abc2d48831dc08849457d134cce671cdba528f5e1314f48e70037322b52f7714296978aac3a6638deb62b64a4b55949285f0474a65aeb57f732738064dff8c203fe35eac090c97bba78a6a6e4e8a9e49cc53639d72841124db0db94af6b86e4ef0c3b93b829e00064778e0d0b7b67df0efa60c777a88e9c5ab09365d82681611322ab79fe03027ea3db245630fd450ebfcc00bb3ba4370da4af6ae72e18bd3217e74e34561d75ff9978f9e037608431c0322d0cfaf94b604975b378f183157150947d11c199c9c92c7ef02c17d4ac1d50c801f29febdf3d6dacb669ad13c59254202c2c7e8077e667b4dc9186967ff3156a6002de449a6d05176fdc98d3c54eb9bbf9227155c1a1e996dd2eea75768a5128ff660d75c80d3fd83db32327d4a08287ea8e819e59eb6080c9efb50300b9c9fd3755537d7d5d898c7384785bc73d997baf6563c42e87a3f2a49773f61dde9a78844a49440ba2dc93b088d871dbb00e568e0234d5670c0c12ccc2995061c39071ac78a8765d3df6d44657bf545dfc963dacb598a005c30ef5f1d30a84da1458479cc19cc5b214489a5f78108880b12e42b55a7c2b1060c92ce07eda4e920c22d21fd4e06ffa5d4b4ce249ff82b78f0d5eb1e4be4e54664a8eb3f9a8fc43c86a00e93693f4f17096cbed2ddd2177457834ff5967cfc0bcd8b6b8da29f530728ead2da7c667683674c68dbbc9734c3ee9f6deeafb1b99ebfbaf00da9df2dd220788196987f0a7b6b7c865f4b057cf6bd07cb1f65f600cc5fb85fbb95a33f3301df98880256876ab6af1d1adf0eb9fa600fa3281d85457798aa3b07e48e783220935a9853ac0ec9fccd6b8c876b633eb6a542005b1d258a18428358e81fe95bd6f6dbc13eb0f464770f194001cd48e65e14133ffd5ff3a04e01197103087111d87b7d9498a40b5936ba337d4d018987abad74253a5c0f3af8c21e235acdcfe232392a59e356c0fe10a41126162077aaa24ce87491cd20b530494c69f4d3803fe86f28c325e78e397040a7cfcd69dd6eb37c4ee93dee07663b2be21cfd66192d38540f3cd47704c2e402b21b29e28a196475e7394d5bbbe037f7c65b637d42b6fcb56c033e1ed8b01f6d1eb1e62ada77a5e54f64e6737d2e8b708e5cea2f94925e561569045f7b356322f395ec5806c13c2d77ff859e829286a4ed6e7a55ae156ea29be7e05c5c8b0c53e503f4decacc00bcdab1cb259bf517debb377b7873caeb79593024bb981e5aa5786973131d72a116266071244977192699bf2f9fa4ae72883244827f9320a07b9df63f34c5f070cd099909f7b181d2f92be6ce67fc9a890b4e8bcf199a6fc31d195ace40837a21a56825ff6883bd95f6aaa92919a9738f3b4b428f688015e72eb378d57c63428d94496766fbfd1d0a33b52976a740d7417ab3c13166d90b4c2607679eeb3f93234b0998799533444c21124d3dd857fe1a6e029fc7d131c99bc967f9c7d916dc6e23f886adf38d990ee9c04c20b2602157ef91acd3e45eef7f9919706bcb9b128e75b31accc0e7433b8a8d8115484994b42dbe4553bf82fc37ee60b27e27983a9b0570fcfdf8c82db9dc050b552d50832b2b3689ad9533e36e0bc1c28180de24807f19a89eec6f94fca0ab69cac0b9d79ac8b74f4f2b62a54a48ebff7326f681ee8f95ad53eb6714d5d27ab706a157d9511c598ba3a9818d236ef4c285779deeae6317d4c70e7d841295736a6231a4bd9442c97713f5672763afdc868ad16a4df8f7ad891aef33ed2b083583dca7f769ba9d96f84988cf2125955275231ec135b8b8bf11a7edbfe3cf6679eec47bc073d7fb473b087db0040e588a30bab6891b66325c43d28e14fdc8ded4e56dc2a3c4f2f3d88b67b8fed66add136b2e38d67e39c5bc3f66ea7137bbcaf03c141ec605d6ae5c2dce724ffe3129fea44fcd47e142aea5db98c464d4c8ea6e1d8a7e597941eead91ec78b9fd9f731a4ee220606bf621d9bfcc0f5d5f0824bc5e2255dc765d3ccee5fa00e49e8315bda7dadb2558a7e64a2ed39bbb2614f801ed297f92a048b9b3114ce99a109df04170454ede2021abd2f63d0280f972176144cd63571cc738c1a86ed71789a3aaf4b2c43934c79064c960c8d8535dfa3d0c396c9a94651def3d1752c3f922ccbc93dc09fb7bc0c9a0777a14c14af2eda9db5da48324a5ffa06d6aca294a5355b44f17c5e20b256ad4abd662f47c2255ddd6be2990aa0103ad8ea27f5a0f2befc10bfffe651166c0f4b5c76caa2afd07826230d9a7df5e4b54d9c40a43acc45c8f9e7479c5dbe9100d81583f6d4bf70d12f03758baa6938e44d14d576986ab6192bd6fde32c6759f3f7d71853b384d5d1d255ac47873bb293fbcae22726ffc2a2adbeab019e4d01c76449e92ea6a83884fed955a5aa92c850de0efde75f60482941f8959c0990b99c6b09d96bb2b7c594814a75f18dbfa89e431a968088fe31f572f0e4cac1dd77a863afcc035b04b1d52cac24fe3baa66919bf7743c91feb79d5d5fbdc24f57d9df70c01aa2d0ca417509407c2f37832fc4fc499cec8fe2bb5638378dffa772e86da22cfbb5352aa456432c0860208a1aaa561b23e97f390955a9a394d43d3a0fbd1f97752c771ecbe8f6c4dc20858b36195cce8a661742a6a0da9e8a05797606b1b78692f222a71aea2cb8c066aed1f1ee16b15fb1d579eb42f21c17710e1487b36e0c96e64640cf983ff728c3a8e77c457c7ac8d266e02feb89ba439e291e99788d47e3a1d20b3ad30a7dc9ee684bedd3bbd457ba1b07a9ded26b18b8fcd32027957d5e2964e215258fc17baa87438a49aad8cb614cd24fc84484376851c88fbbd59e98a57f70a206f0e4b43c5a2237746037f2359bcccd1350de58eed0e47a008346dbadd99a45e3bd23cedfe70cbadae7df73f106f2354eada21cd344c516606dc98ad4c0d8f1c6373bf763cdae25e045f796117eb65d65687708d9d9e6ceaa605331a0f8b73958bacaeec72105b876dce492cd6880da3721856489a5d5926c6640aba648c6b10e90c832f5f9e5f4497202937b406e3d3c2307846d540a69a6579e4d7d3ff697439ab93790849d8b86a774a9f347107b2bcf78a3d575155b51c6b35bbcfef2c369f4399dd9c9170ea5efd81453f38e9627e3fff8ef2bfc0e2acf709e5f19bee5457d010cd0914c3cfd261ae9d1dceb505a3e3800e7f3ca6e62dbc41a9d9fdfa9e91e40eb0123165140146e679fbaac0efb88c0727594afbd01ade64338ae6451171242a9dc20a55025d1838971ce1bd6b15f0dab08329baab1c61bd7fca482b2e79e4db4e8ab7c09f496df14d29ac855e185ffbd4ebedf66962787eb67855914faf2bc804e58d373ab9430fc575d4de86b8259e662172c49c9640312b4cc61aeee67e6989917e9599fd71249cf23e779178f1631f6ba5ab556d30ee727c11aa021f155d70766535fb0ab1269df0f32767fa49f86e90326078e701fe74811bb31ecafd6e1eb4a35ac8c6dc7a74b0b27995a6d38469ffa068a8b235bcfd5d903fd4c4495826be9e90aaae593f9f9434a840b793bc979086bd99e130cbfc5c451077f7404383453cb80b7f3187be3b27564867791d13ba4fd35ce36655b40a7375ee6de2c77edbcd85203fc2d24ead2d76f51307dccdc15b75825ce265ff3e040255f7bdfa527cd0627c70e6cb68505407e5ea380dca51e4657165ec069a09dc93f08bc59583c68454e2d9fbc9a19a6cc696b1415752a3bb57640e1dee7d16a752aa78612945c733b843ce52487c3cf26ad0f91a48c94d18f59bf915a7cabeb0a3083727fc03096980ef31f00d64114689a1b4a4823b32f770c0c33b66a47c3ad03c1465ebaa56090ca4edb7d610499aad0f15ab81618dd6bba0e4400f92b67fc08ee29ae07d570d9fc8eca8229f57f030596b1550ba37e5f92ab8080835b598c73774cc31ec5b01b9177bb8e3c8c3412fa2775f3cfd9f3d35d665ef214d40c6f64dcd90fb5eab27ab7a8746b28a0e6740997183f4e3cb959668ab90c8f814f8c1ab23ec0565b247d6b929813f06d13ad976dd1e4b704d1a97f30be6baf839fbe4f81f6ac02b526350548866dfe32f31b8f9992b858563d0c4f17d763944a705caa17eeba23517a1f9ac03f65307184c975d2fa72b6e0733ca18c3b5f94effe743cbca81d214ef2b5304c00c948fd0312ea92010a2c3822adbcf04c0ca715a070ec1698ef1ffbe4e074afee1a5746199a46553c71cbe4c2fc7aa492d4a180f83aa5805a59abe44cad10cf0bfdf3a6ee779c26cd08cd3cd6664861554e170c524d77e058654069b6cdbb4bd84330f26655cd82460229a768847cb0122a04a926cb02a46f874fc2d9b6f84180f8d862ef54bb4fdcc7d54bb2aaf8dac65c585dda46fa215bb83b2d964fa6891e354f952d69a1951174d97cb8b50edf92d9a7f2411e96613a8451b2e707e011763f941562b75a871fb283d71d7fe5e8128ef81cf49b15e80f13183528ab7cc5291dc227d1de10a685cb424dc86d62b2e1fdc0a8297285c2cbb783f9f6fb614a23caa7c6cf55dd158198f0e171037a8f4ec2b9c0e45e61c1ccd53cc54ad62ad54be4d19ccceeb66f3908668088e3480687d74ea5633f331e85af391e031edff0003011b65ce4e872d7719f593931fa302d8702145aa875afdcfb1c5b99d9dc09bb56acdca6732d8155adf81e508ee4e5655b191dfc86e3d6c5c29ae452094efc99bd24da35acd0ac60ec225a8ac4a1651ba66283e55fd5555a93aaf32e7b059d55674847a92f9f8703c8056ff7f88f4afdeef205fc5601b001c1a51d8726a76f1bed1a15e6d524c5b9f2b6b32efa9151c6f848175d47750c9c25d3911881a859c72e95db17ecb9728e4dcb89ad175ba83d82ae0651f8b780a88e6ef66bff3caf8badb344a16c8eeadaebf34f331e80ca1c49ff609c5b14f8b3668d46f29607f2d4857635ce61de42a9e14437289ae6d2854a9b58dad53b8ace58c7d878999bf182bfb2bd62d1a7a0139577070cbf84272ba0d6d26883b1852915a94b23b1e909ce6d2deb95053b1dfa861b2faafd5edf3367781e1d15940ad889f7b9e7100b42ca3ab57618cef26777ffff897a542768940ef176f560d07ed77c56c5a2c4ab5204f15a8086ceca6a91470f3163bfe3554e858d1977c736f57b7a793fd9979e85e95f10645cb6dd6a202ef55387390480a8fcb73b3668507aa79fc61a48c76b0e3222b24cd37a8c523f278b9de00f6493d6488599d24f33ffe47d6b2e72e5fd32b137435ab86719327b56dc4dc32e8975ed4ef433d7b04862d75e048059fbeb0b68c0f1aa846b5a2c3468556b8e1e6624c5612f450e11d50ce0d8a4f18f74c60ca206a44579cd64d15a050b98ba86f5dcaf71ebdb5832865d54ea33c968d2be33f34d9f2f7c6e09918b2cfd1b1448b6132a6f757a8e0bd5e1b2a575df379e4bda4a0918ff4968cba7079edaa4dffd17d9d6395b1dc35bdc7cb691ccfbac9c2a9dc8836a959ee06ccb5b6ca28bb6b6b580d099aac0a659f2e59204a2828a2e463d56ce3d08e3e95dd3da109ea9750e9debaaee4cb83ed4ef498501e43694562e36190cacbbe7ad7a36518498240d57a47f936315c380e70fcf3fb5f5db49249b41b11392201e0545e15b8e54c6bb1c5e64bba774132ca36a75a39ce03d9f1d7815de506eade0481567ca46e76c1c1e4e676ae881723d438c0186fa22ebab8d3677f61a695d66e2ca2590610ed1744aecb4ecaf3bb30a059dd68de04da836a4559f3643937830e9447bae997c240ba107a36b9eab1987407b8e0f5ff971af010ea381b752303dcbb010113245f99ff6d7d99848da5fcfed849c796882fd6d0c1f0cb7e118e6db187f9c681708c19d997ca66e098379c1b4872cce054e2deb4e90a7af67a31331398c455df2948014215bd906247a8c0a16fd68593f87b6e766a4aadc3bff689b53584c9c29a962bd1d10b0e96928c4b148b6ca10ffa36e998cbce873b27e3d7e7c7dc0ccb5aaa0de4718c7c759723857761549c233a03438e8eb12cdc396c25419e258973551b36e4478679a65d94f3257e73d8bdd2ea5796cb3420a0318eafa572f88fc20b71007e6f2dbbe899b5d9df78e8842504481a41db2b7fe85706c027af3ac175cbfef729023ed808e3c94d20fb02a919f471ca224ddec696450eb2134a8e7aae4a3f880d069e886404e6e893f1c36f4b58dd6564a73ec6400daf8c73fe3a548e4f190bf7252a1153e623e328d6f059521a5f67809260c1696c9ec7f0cf365fb334aeb9cd78ac2be98d496afd34aeab547c44d8cd8049f0973ba9dc7a0f62afa52eb4b0d9cbf8e334dd2b3973a632ba67c6668c549a2034642507f16feccc516ce2edd262ab780b6faa32f4a155df61b4c34b26177195b91de968c02d56d0d8893d54551167f9ceb8bebaceed5c82f452385b4fd740a4d204803e6f28d27269f01cef2ebb785e2cba86b78218bffce53a608cc573ac35ebc48fcf7881ea3dae6713123d6a2d37b374aae2d100c07d3fc968ecacacf6f00ad5aa361d45ca97c266e402a41d38d19558aa3f415b2bd340d14b0ae12f586fd20e3482cff3365dae3ff46136f7a3f01a9466aca09296d18df9c1c4be0e4298389ab0b3814a42452f34087d1df1a81091cdc8d8b2de9f0cf920ccda62606d21fde6f7857f2faf83f9cb88826ffcdff6dd6462dfbd3833005f5d8351f5d232656b7011d1d91acde9569b3fd522b5368a392be43abd39d70c1eb8f079c426abff504e275d5eb4f08a4a6041f42db8bdfc3b230ec0a9060de955a5fbba97b2e4c56fb278e9ceee7232bc9d4c9ba750f7dca47931aa73ce94a71401872923b26ea2a0a65cb3d0dc64441f1b06f7b627564b35a3f4590d55ab1415784b9caaee096bc2aed8e75cbe3a094fb799329afc07f346c7e3ae9ff6da0fadff14a25a80e3fc9c4938abed77108089d29f3bf99ce0cebe970f152d4136cf3450f7e8435048d730eece1a61b634bfdac089551def84069ddf97734b6335337f98eebc1b72454fdd368902f8ba754cbb730b48e5f3e1351544b14ad6efe049c9001390f3b498b063b78b3ab64979a21a16a5b7f730b0be7ccf45cfee9d1c34b27e827ea700eda08ec5bbd6705f9f61997b6655cc5bab86151d201576b9821a4f0c225205e7ef47ad21b59a5088874d995f95795606dc9774722aab45ff01478e4b6e053431c9c6c6d6c9d399d4980df72bb62c115943b53b87ab6d4e73d339977e75b983d64cb4883b95b1c147e831428e2f3df9c42e2963a576c72f936723b34ef24f6c059589421455fb685e4c9879d8d0e770f7d8d55557e99f857917a7e3b59556656e0c2d527eacc5c364efabfc8aafad24963279ac886f7685377b45abb9513ad3c612435c8685b3cfc7ae3a1da6ef18da3f476dda81dc9f24d87543f0c560248089e5144e3dae9d6f4ba81aa3e6d7a4c43770f742d9f694d50895d1d27b0c290487c450b777bc74d376afb9ba01bbe973ee2320297a2bedfc64b0aed926660197aa6c54b95dc00b43c5f833faf35fed50f811a64b999597525d91f433b5d48b97288861936f309db1913bd4ce06a017c9be2a45617b7c2012e493973a2a6e780c70f7bd2190ec5aa8d0d328cab51d3f3e591367a2e203e7ee2554e01332a22ee9c2a21457a124135de9b422d7f164a648a6e2d7be115b64ae772fd9d14fcb725770abb395ff5f50f3d8b491223ca0992c8bb8e97a989104035e202ddacb1ad085ee30c4efcb4e68604582beb5e77e98fb9c1429b1cbf6f277ea087a3593fadf70db7cc533e87f777890ad7beed06acc90aebd296a9694f5de9ec57fcfe1e3aba2c6b79972d8347a2e3e02093747c3e1ba700e339d8336b5e9335fe8d5df5715b1b9b47a9f35b80842ec2e03e500af58673b2605c073db0396e55df07b29f5d0a7e496a6b9085a68541feb09aab08112249ed28f17898732308ec1cd40f38edb34aa850c1c8d33d2e8457ec17ed854297b288f943a430ed01c1960f2e5bf72fb871a37b8204f2bb9592104a3798711ce44ac33bbf4700d6c1b9cee71a41052741b97543ee07ec282ee2ff80395e47a88264fe2a9b081f060d3be1773c62fc537e48edbc55ab0cd0b787b5ba1469685ecea3c9cd258cf48e54673d0b6f32a482661bca3f51571732825f405427ce2ecada1b799e72567705acae86331eb69702092d644405f03b0430638dd5e38d07d73a5bcf8f699a532f8063be9b5d933a457b7043049856028774e0de1622c91b143aa5ac635da9be77adc6b0efd0061b6cb0e9842e1b7fea3027a46f813a7704c6bb79b35c6185eb7cf6deb2f247d0edd7b0fbe6c8a79a6c9d7caf901add41de75ab0afc99b4ca1d3726ded1fcd50e725da97ba3ece3a76be3f95f0bc68c513e32de43117ed00c972f282b11ad3fc87b6cd10e4724fb3321017aa303b4ff2879b4352c88f61a184c7d748a985f20e7315588ef555170af226b65011b1252772257bd6f7d508d3a392993ba9da7fedccd9da34329d77e7078259388c5a5aa2359c77e86c9c5be0d3ce924995c421d249d56153791f4bbc3e1222a63427eaf00ec7e309c79071609194f13ff876fdb7b4bf34a5586ad031d0a0d3581cfe9652eef0c5e500ad07702b8996132c74a32014c4819a3ab816efc8fd41c55e4f424a46318b39d9d5245dfe3f1c2b273a2e92eb0e8bb4b14ca3159e11702f07e4a3df0494c7eb1767e276a53d1c66cd42740524f7d87bc499839bd9434c3e4b213cbc55aea00758c4341f83cb3f485abf40e0421718a3bbd37d8feba293c25a2d34400b465ae85e8eccd959bc2c1cfd1c19701ebc374c51881d7b862ea5cbc181e7bf46e33f01cf5d72f17d60d3af09a7adb06c451d14ac79913c1a8118a24975f90a4c1b33bc9f24f203e5e418643670c2b73334b489d19086d313e4d0ddacabbbf49d6a9a5fe893104daf0e738151101e5cea1922b0d617d341f33a174cca6c16f7d079155bda986a362995fab802b5f3f4cb3ed3ee7f637c60db6849b49f8467d68d5cd207cb1ebfec7cea40574cd034e3e53cb068c0d8857274e39c132a8a53fbe0cbde02da9106c5f838d61759b5b191b5bafe9b8b590479347a4f789b4f5b1864136325394eb1c42188d9d9c98c1b59e433c5445a2fbf538f78eed4aa1f2757ab05443307a93860daa51b2462695fbc2c0901f0b89b5df6d371747e8f56e2be73eb9ce7ba524df470915b7a6b1a95fcf1794dcc673d0caefec0d7321e1c3b01ff341d2b7f224e510e8ef238262d3fff9fe5f754b13e15cddcf03a64da7551222d9a4030dfc1729ef6abaed719b3108762dc83a62378fbc21b6340c7e7887a06b3502e733fe35822d0d55443f69cf901b49fb138da3d23b2810f30f61aa5d191122107f9808877cff766156fa4a66cdf5c8203c5a9059be4025f3afe7014c2c1729bbe37a9ec4787e93250c6d9df288fb7c05a825955ad2ba23c5fcf5806bd742057392bc6cfd2777535fc9e2f3bf2dac62cf2cfc803ae06cd693b79f83f28ac3d1cadc883476e89f1c9c3ec42ef2b52ea76f127918a4ad8df3f233ddf8e1396dfc06ac8e42bdcc18a5223a57ff5c0e3843689e65b63d97bdb5cf5d07e0fe6dfe4b117cfad0d6c2dda331d87e7ce8235da576f50ff72150a0134d6eef7240e96e15080e18ee6b71e2bde7e4a2d9be10dcb518f79d9b81ec16d11c58aed2d929c77aac3d1dc1ffb60242152257273461cb1d8401fad1039e6e8511d54502d53d1d271c6819604b4299f0a16541c98d50eedd7eeb6b569f9c508dbefa46732b2e1f9d8f0744634a8f78729b3a3e8d6c9d49665be54685633dc9adb38a3099a10968755a8a7ff5b574e7e97b056095ce5a7f8d9b739366ae22534e97363c862d15e3cdcea178b14e7664ed2a67eadd26aaf7f97ef957340e69be0b12410ccb57e13037a02366d95318c8f9b5fdafdaf1ae999b613a85f21fe8301fb77c0b64f4b69a019ef39ab615deee06948e44607e942545c89a636790c38e32c7da7f2d8354a6efb02f2adc6ca6319cba3411f93f4cdeb394e8514653e3e303d21008224682305927acaf34383d2a3fb83b7a04a6d31ff959e508f54d647a16d25f1e1ee4ac1708ff1d71d92589c68d6b80ac8124c520d73c2cf82cf85086c435870a3b35872c0e052588b469ddb4c2d40936bb1818ac94a8a17fcc9d1b7bec3cb01ac88cd70740d857420bc812b9ebc8ddf2cf33a097db30567e85a9e77ad4931fcca0051d8149604159f720bf2dc269ff25c9b0df0afc539fead5b880199b7d637bac8d118a940597959c724e16ada9e5881b6c39d1e9998b3a6eca159975c2dca7e3b638729f9e23afd66d657ffb7fc008e92a07dd61fc9ad91b1611f311818dae9d73a708062b08b0951cf910aa049556e93172b24c5c26f9d3c0b600017dc1d4c49aae070086e3eb441558082f3902d87b77fddb081b323358e07fd7a340dc58e6dd7ef147bc0c14cdf45aae5c3361c90bca50564306b1409825771f4704ee64dce31f1ad001e4d48580d16b757dc46215194cf27e60aae7c6e23603d0b2edde0629d465f4897c558e30356c5800807d73459ae13d0fa0ac783092f3a40406c4e795f08530b867bba304583c0528648c8311a40f9e5aef6ad53d181787df9625c5d378f6a378746e8a0a9189d617da4a9175356ea849f1cfdb964600c4294dfb89c3d3bbef7190e7b2782e51326fb1bf79bebe66ac528927ebbff1d95bc8d884fa9792df23e02e6e071494900aab676bb031898d0d1079edb7d06a109f63a8dfa7bba12c52584ee7f3b8c288ff1dacf</script>
+ <script>// encryptedRmd
+// 
+// Copyright (c) 2020 Dirk Schumacher, Jannis R
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+// 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// 
+// The javascript and html code used for decryption is based on a number of JavaScript packages. The licenses are listed below:
+// 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// self-decrypting-html-page v1.0.1- License ISC
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Copyright (c) 2018, Jannis R
+// 
+// Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+// 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// base64-js v1.3.1 - License MIT
+// downloaded from <https://www.npmjs.com/package/base64-js>
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// The MIT License (MIT)
+// 
+// Copyright (c) 2014 Jameson Little
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// 
+// 
+// 
+// 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// browser-resolve v1.11.3 - License MIT
+// downloaded from <https://www.npmjs.com/package/browser-resolve>
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// The MIT License (MIT)
+// 
+// Copyright (c) 2013-2015 Roman Shtylman <shtylman@gmail.com>
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// 
+// 
+// 
+// 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// buffer v5.2.1 - License MIT
+// downloaded from <https://www.npmjs.com/package/buffer>
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// The MIT License (MIT)
+// 
+// Copyright (c) Feross Aboukhadijeh, and other contributors.
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// 
+// 
+// 
+// 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// file-saver v2.0.2 - License MIT
+// downloaded from <https://www.npmjs.com/package/file-saver>
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// The MIT License
+// 
+// Copyright © 2016 [Eli Grey][1].
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+// 
+//   [1]: http://eligrey.com
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// 
+// 
+// 
+// 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ieee754 v1.1.13 - License BSD-3-Clause
+// downloaded from <https://www.npmjs.com/package/ieee754>
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Copyright 2008 Fair Oaks Labs, Inc.
+// 
+// Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+// 
+// 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+// 
+// 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+// 
+// 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+// 
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// 
+// 
+// 
+// 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// sodium-encryption v1.2.3 - License MIT
+// downloaded from <https://www.npmjs.com/package/sodium-encryption>
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// The MIT License (MIT)
+// 
+// Copyright (c) 2016 Mathias Buus
+// 
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+// 
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// 
+// 
+// 
+// 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// tweetnacl v0.14.5 - License Unlicense
+// downloaded from <https://www.npmjs.com/package/tweetnacl>
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// This is free and unencumbered software released into the public domain.
+// 
+// Anyone is free to copy, modify, publish, use, compile, sell, or
+// distribute this software, either in source code form or as a compiled
+// binary, for any purpose, commercial or non-commercial, and by any
+// means.
+// 
+// In jurisdictions that recognize copyright laws, the author or authors
+// of this software dedicate any and all copyright interest in the
+// software to the public domain. We make this dedication for the benefit
+// of the public at large and to the detriment of our heirs and
+// successors. We intend this dedication to be an overt act of
+// relinquishment in perpetuity of all present and future rights to this
+// software under copyright law.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+// IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+// OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+// ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+// OTHER DEALINGS IN THE SOFTWARE.
+// 
+// For more information, please refer to <http://unlicense.org>
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+(function (Buffer){
+"use strict";var _require=require("sodium-encryption"),decrypt=_require.decrypt,_require2=require("file-saver"),saveAs=_require2.saveAs,keyEl=document.getElementById("key"),submitEl=document.getElementById("submit"),messageEl=document.getElementById("message"),resetForm=function(){keyEl.classList.remove("error"),submitEl.classList.remove("error"),messageEl.innerText=""},showError=function(e,r){e.classList.add("error"),messageEl.innerText=r},onSubmit=function(){resetForm();try{if(0===keyEl.value.length)return showError(keyEl,"Please enter a key.");var e=Buffer.from(keyEl.value,"hex"),r=decrypt(encrypted,nonce,e),n=new Blob([r],{type:"text/html;charset=utf-8"});saveAs(n,"document.html")}catch(e){console.error(e),showError(submitEl,"The key seems to be wrong.")}},nonceEl=document.getElementById("nonce"),encryptedEl=document.getElementById("encrypted"),encrypted=null,nonce=null;nonceEl&&nonceEl.innerText&&encryptedEl&&encryptedEl.innerText?(nonce=Buffer.from(nonceEl.innerText,"hex"),encrypted=Buffer.from(encryptedEl.innerText,"hex"),submitEl.addEventListener("click",onSubmit,!1)):(showError(submitEl,"Encrypted data missing."),keyEl.disabled=nonceEl.disabled=submitEl.disabled=!0);
+
+}).call(this,require("buffer").Buffer)
+},{"buffer":4,"file-saver":5,"sodium-encryption":7}],2:[function(require,module,exports){
+"use strict";exports.byteLength=byteLength,exports.toByteArray=toByteArray,exports.fromByteArray=fromByteArray;for(var lookup=[],revLookup=[],Arr="undefined"!=typeof Uint8Array?Uint8Array:Array,code="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",i=0,len=code.length;i<len;++i)lookup[i]=code[i],revLookup[code.charCodeAt(i)]=i;function getLens(o){var r=o.length;if(r%4>0)throw new Error("Invalid string. Length must be a multiple of 4");var e=o.indexOf("=");return-1===e&&(e=r),[e,e===r?0:4-e%4]}function byteLength(o){var r=getLens(o),e=r[0],t=r[1];return 3*(e+t)/4-t}function _byteLength(o,r,e){return 3*(r+e)/4-e}function toByteArray(o){var r,e,t=getLens(o),n=t[0],u=t[1],p=new Arr(_byteLength(o,n,u)),a=0,h=u>0?n-4:n;for(e=0;e<h;e+=4)r=revLookup[o.charCodeAt(e)]<<18|revLookup[o.charCodeAt(e+1)]<<12|revLookup[o.charCodeAt(e+2)]<<6|revLookup[o.charCodeAt(e+3)],p[a++]=r>>16&255,p[a++]=r>>8&255,p[a++]=255&r;return 2===u&&(r=revLookup[o.charCodeAt(e)]<<2|revLookup[o.charCodeAt(e+1)]>>4,p[a++]=255&r),1===u&&(r=revLookup[o.charCodeAt(e)]<<10|revLookup[o.charCodeAt(e+1)]<<4|revLookup[o.charCodeAt(e+2)]>>2,p[a++]=r>>8&255,p[a++]=255&r),p}function tripletToBase64(o){return lookup[o>>18&63]+lookup[o>>12&63]+lookup[o>>6&63]+lookup[63&o]}function encodeChunk(o,r,e){for(var t,n=[],u=r;u<e;u+=3)t=(o[u]<<16&16711680)+(o[u+1]<<8&65280)+(255&o[u+2]),n.push(tripletToBase64(t));return n.join("")}function fromByteArray(o){for(var r,e=o.length,t=e%3,n=[],u=0,p=e-t;u<p;u+=16383)n.push(encodeChunk(o,u,u+16383>p?p:u+16383));return 1===t?(r=o[e-1],n.push(lookup[r>>2]+lookup[r<<4&63]+"==")):2===t&&(r=(o[e-2]<<8)+o[e-1],n.push(lookup[r>>10]+lookup[r>>4&63]+lookup[r<<2&63]+"=")),n.join("")}revLookup["-".charCodeAt(0)]=62,revLookup["_".charCodeAt(0)]=63;
+
+},{}],3:[function(require,module,exports){
+"use strict";
+
+},{}],4:[function(require,module,exports){
+(function (Buffer){
+"use strict";function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}var base64=require("base64-js"),ieee754=require("ieee754");exports.Buffer=Buffer,exports.SlowBuffer=SlowBuffer,exports.INSPECT_MAX_BYTES=50;var K_MAX_LENGTH=2147483647;function typedArraySupport(){try{var e=new Uint8Array(1);return e.__proto__={__proto__:Uint8Array.prototype,foo:function(){return 42}},42===e.foo()}catch(e){return!1}}function createBuffer(e){if(e>K_MAX_LENGTH)throw new RangeError('The value "'+e+'" is invalid for option "size"');var t=new Uint8Array(e);return t.__proto__=Buffer.prototype,t}function Buffer(e,t,r){if("number"==typeof e){if("string"==typeof t)throw new TypeError('The "string" argument must be of type string. Received type number');return allocUnsafe(e)}return from(e,t,r)}function from(e,t,r){if("string"==typeof e)return fromString(e,t);if(ArrayBuffer.isView(e))return fromArrayLike(e);if(null==e)throw TypeError("The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type "+_typeof(e));if(isInstance(e,ArrayBuffer)||e&&isInstance(e.buffer,ArrayBuffer))return fromArrayBuffer(e,t,r);if("number"==typeof e)throw new TypeError('The "value" argument must not be of type number. Received type number');var n=e.valueOf&&e.valueOf();if(null!=n&&n!==e)return Buffer.from(n,t,r);var f=fromObject(e);if(f)return f;if("undefined"!=typeof Symbol&&null!=Symbol.toPrimitive&&"function"==typeof e[Symbol.toPrimitive])return Buffer.from(e[Symbol.toPrimitive]("string"),t,r);throw new TypeError("The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type "+_typeof(e))}function assertSize(e){if("number"!=typeof e)throw new TypeError('"size" argument must be of type number');if(e<0)throw new RangeError('The value "'+e+'" is invalid for option "size"')}function alloc(e,t,r){return assertSize(e),e<=0?createBuffer(e):void 0!==t?"string"==typeof r?createBuffer(e).fill(t,r):createBuffer(e).fill(t):createBuffer(e)}function allocUnsafe(e){return assertSize(e),createBuffer(e<0?0:0|checked(e))}function fromString(e,t){if("string"==typeof t&&""!==t||(t="utf8"),!Buffer.isEncoding(t))throw new TypeError("Unknown encoding: "+t);var r=0|byteLength(e,t),n=createBuffer(r),f=n.write(e,t);return f!==r&&(n=n.slice(0,f)),n}function fromArrayLike(e){for(var t=e.length<0?0:0|checked(e.length),r=createBuffer(t),n=0;n<t;n+=1)r[n]=255&e[n];return r}function fromArrayBuffer(e,t,r){if(t<0||e.byteLength<t)throw new RangeError('"offset" is outside of buffer bounds');if(e.byteLength<t+(r||0))throw new RangeError('"length" is outside of buffer bounds');var n;return(n=void 0===t&&void 0===r?new Uint8Array(e):void 0===r?new Uint8Array(e,t):new Uint8Array(e,t,r)).__proto__=Buffer.prototype,n}function fromObject(e){if(Buffer.isBuffer(e)){var t=0|checked(e.length),r=createBuffer(t);return 0===r.length?r:(e.copy(r,0,0,t),r)}return void 0!==e.length?"number"!=typeof e.length||numberIsNaN(e.length)?createBuffer(0):fromArrayLike(e):"Buffer"===e.type&&Array.isArray(e.data)?fromArrayLike(e.data):void 0}function checked(e){if(e>=K_MAX_LENGTH)throw new RangeError("Attempt to allocate Buffer larger than maximum size: 0x"+K_MAX_LENGTH.toString(16)+" bytes");return 0|e}function SlowBuffer(e){return+e!=e&&(e=0),Buffer.alloc(+e)}function byteLength(e,t){if(Buffer.isBuffer(e))return e.length;if(ArrayBuffer.isView(e)||isInstance(e,ArrayBuffer))return e.byteLength;if("string"!=typeof e)throw new TypeError('The "string" argument must be one of type string, Buffer, or ArrayBuffer. Received type '+_typeof(e));var r=e.length,n=arguments.length>2&&!0===arguments[2];if(!n&&0===r)return 0;for(var f=!1;;)switch(t){case"ascii":case"latin1":case"binary":return r;case"utf8":case"utf-8":return utf8ToBytes(e).length;case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return 2*r;case"hex":return r>>>1;case"base64":return base64ToBytes(e).length;default:if(f)return n?-1:utf8ToBytes(e).length;t=(""+t).toLowerCase(),f=!0}}function slowToString(e,t,r){var n=!1;if((void 0===t||t<0)&&(t=0),t>this.length)return"";if((void 0===r||r>this.length)&&(r=this.length),r<=0)return"";if((r>>>=0)<=(t>>>=0))return"";for(e||(e="utf8");;)switch(e){case"hex":return hexSlice(this,t,r);case"utf8":case"utf-8":return utf8Slice(this,t,r);case"ascii":return asciiSlice(this,t,r);case"latin1":case"binary":return latin1Slice(this,t,r);case"base64":return base64Slice(this,t,r);case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return utf16leSlice(this,t,r);default:if(n)throw new TypeError("Unknown encoding: "+e);e=(e+"").toLowerCase(),n=!0}}function swap(e,t,r){var n=e[t];e[t]=e[r],e[r]=n}function bidirectionalIndexOf(e,t,r,n,f){if(0===e.length)return-1;if("string"==typeof r?(n=r,r=0):r>2147483647?r=2147483647:r<-2147483648&&(r=-2147483648),numberIsNaN(r=+r)&&(r=f?0:e.length-1),r<0&&(r=e.length+r),r>=e.length){if(f)return-1;r=e.length-1}else if(r<0){if(!f)return-1;r=0}if("string"==typeof t&&(t=Buffer.from(t,n)),Buffer.isBuffer(t))return 0===t.length?-1:arrayIndexOf(e,t,r,n,f);if("number"==typeof t)return t&=255,"function"==typeof Uint8Array.prototype.indexOf?f?Uint8Array.prototype.indexOf.call(e,t,r):Uint8Array.prototype.lastIndexOf.call(e,t,r):arrayIndexOf(e,[t],r,n,f);throw new TypeError("val must be string, number or Buffer")}function arrayIndexOf(e,t,r,n,f){var i,o=1,u=e.length,s=t.length;if(void 0!==n&&("ucs2"===(n=String(n).toLowerCase())||"ucs-2"===n||"utf16le"===n||"utf-16le"===n)){if(e.length<2||t.length<2)return-1;o=2,u/=2,s/=2,r/=2}function a(e,t){return 1===o?e[t]:e.readUInt16BE(t*o)}if(f){var h=-1;for(i=r;i<u;i++)if(a(e,i)===a(t,-1===h?0:i-h)){if(-1===h&&(h=i),i-h+1===s)return h*o}else-1!==h&&(i-=i-h),h=-1}else for(r+s>u&&(r=u-s),i=r;i>=0;i--){for(var c=!0,l=0;l<s;l++)if(a(e,i+l)!==a(t,l)){c=!1;break}if(c)return i}return-1}function hexWrite(e,t,r,n){r=Number(r)||0;var f=e.length-r;n?(n=Number(n))>f&&(n=f):n=f;var i=t.length;n>i/2&&(n=i/2);for(var o=0;o<n;++o){var u=parseInt(t.substr(2*o,2),16);if(numberIsNaN(u))return o;e[r+o]=u}return o}function utf8Write(e,t,r,n){return blitBuffer(utf8ToBytes(t,e.length-r),e,r,n)}function asciiWrite(e,t,r,n){return blitBuffer(asciiToBytes(t),e,r,n)}function latin1Write(e,t,r,n){return asciiWrite(e,t,r,n)}function base64Write(e,t,r,n){return blitBuffer(base64ToBytes(t),e,r,n)}function ucs2Write(e,t,r,n){return blitBuffer(utf16leToBytes(t,e.length-r),e,r,n)}function base64Slice(e,t,r){return 0===t&&r===e.length?base64.fromByteArray(e):base64.fromByteArray(e.slice(t,r))}function utf8Slice(e,t,r){r=Math.min(e.length,r);for(var n=[],f=t;f<r;){var i,o,u,s,a=e[f],h=null,c=a>239?4:a>223?3:a>191?2:1;if(f+c<=r)switch(c){case 1:a<128&&(h=a);break;case 2:128==(192&(i=e[f+1]))&&(s=(31&a)<<6|63&i)>127&&(h=s);break;case 3:i=e[f+1],o=e[f+2],128==(192&i)&&128==(192&o)&&(s=(15&a)<<12|(63&i)<<6|63&o)>2047&&(s<55296||s>57343)&&(h=s);break;case 4:i=e[f+1],o=e[f+2],u=e[f+3],128==(192&i)&&128==(192&o)&&128==(192&u)&&(s=(15&a)<<18|(63&i)<<12|(63&o)<<6|63&u)>65535&&s<1114112&&(h=s)}null===h?(h=65533,c=1):h>65535&&(h-=65536,n.push(h>>>10&1023|55296),h=56320|1023&h),n.push(h),f+=c}return decodeCodePointsArray(n)}exports.kMaxLength=K_MAX_LENGTH,Buffer.TYPED_ARRAY_SUPPORT=typedArraySupport(),Buffer.TYPED_ARRAY_SUPPORT||"undefined"==typeof console||"function"!=typeof console.error||console.error("This browser lacks typed array (Uint8Array) support which is required by `buffer` v5.x. Use `buffer` v4.x if you require old browser support."),Object.defineProperty(Buffer.prototype,"parent",{enumerable:!0,get:function(){if(Buffer.isBuffer(this))return this.buffer}}),Object.defineProperty(Buffer.prototype,"offset",{enumerable:!0,get:function(){if(Buffer.isBuffer(this))return this.byteOffset}}),"undefined"!=typeof Symbol&&null!=Symbol.species&&Buffer[Symbol.species]===Buffer&&Object.defineProperty(Buffer,Symbol.species,{value:null,configurable:!0,enumerable:!1,writable:!1}),Buffer.poolSize=8192,Buffer.from=function(e,t,r){return from(e,t,r)},Buffer.prototype.__proto__=Uint8Array.prototype,Buffer.__proto__=Uint8Array,Buffer.alloc=function(e,t,r){return alloc(e,t,r)},Buffer.allocUnsafe=function(e){return allocUnsafe(e)},Buffer.allocUnsafeSlow=function(e){return allocUnsafe(e)},Buffer.isBuffer=function(e){return null!=e&&!0===e._isBuffer&&e!==Buffer.prototype},Buffer.compare=function(e,t){if(isInstance(e,Uint8Array)&&(e=Buffer.from(e,e.offset,e.byteLength)),isInstance(t,Uint8Array)&&(t=Buffer.from(t,t.offset,t.byteLength)),!Buffer.isBuffer(e)||!Buffer.isBuffer(t))throw new TypeError('The "buf1", "buf2" arguments must be one of type Buffer or Uint8Array');if(e===t)return 0;for(var r=e.length,n=t.length,f=0,i=Math.min(r,n);f<i;++f)if(e[f]!==t[f]){r=e[f],n=t[f];break}return r<n?-1:n<r?1:0},Buffer.isEncoding=function(e){switch(String(e).toLowerCase()){case"hex":case"utf8":case"utf-8":case"ascii":case"latin1":case"binary":case"base64":case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return!0;default:return!1}},Buffer.concat=function(e,t){if(!Array.isArray(e))throw new TypeError('"list" argument must be an Array of Buffers');if(0===e.length)return Buffer.alloc(0);var r;if(void 0===t)for(t=0,r=0;r<e.length;++r)t+=e[r].length;var n=Buffer.allocUnsafe(t),f=0;for(r=0;r<e.length;++r){var i=e[r];if(isInstance(i,Uint8Array)&&(i=Buffer.from(i)),!Buffer.isBuffer(i))throw new TypeError('"list" argument must be an Array of Buffers');i.copy(n,f),f+=i.length}return n},Buffer.byteLength=byteLength,Buffer.prototype._isBuffer=!0,Buffer.prototype.swap16=function(){var e=this.length;if(e%2!=0)throw new RangeError("Buffer size must be a multiple of 16-bits");for(var t=0;t<e;t+=2)swap(this,t,t+1);return this},Buffer.prototype.swap32=function(){var e=this.length;if(e%4!=0)throw new RangeError("Buffer size must be a multiple of 32-bits");for(var t=0;t<e;t+=4)swap(this,t,t+3),swap(this,t+1,t+2);return this},Buffer.prototype.swap64=function(){var e=this.length;if(e%8!=0)throw new RangeError("Buffer size must be a multiple of 64-bits");for(var t=0;t<e;t+=8)swap(this,t,t+7),swap(this,t+1,t+6),swap(this,t+2,t+5),swap(this,t+3,t+4);return this},Buffer.prototype.toString=function(){var e=this.length;return 0===e?"":0===arguments.length?utf8Slice(this,0,e):slowToString.apply(this,arguments)},Buffer.prototype.toLocaleString=Buffer.prototype.toString,Buffer.prototype.equals=function(e){if(!Buffer.isBuffer(e))throw new TypeError("Argument must be a Buffer");return this===e||0===Buffer.compare(this,e)},Buffer.prototype.inspect=function(){var e="",t=exports.INSPECT_MAX_BYTES;return e=this.toString("hex",0,t).replace(/(.{2})/g,"$1 ").trim(),this.length>t&&(e+=" ... "),"<Buffer "+e+">"},Buffer.prototype.compare=function(e,t,r,n,f){if(isInstance(e,Uint8Array)&&(e=Buffer.from(e,e.offset,e.byteLength)),!Buffer.isBuffer(e))throw new TypeError('The "target" argument must be one of type Buffer or Uint8Array. Received type '+_typeof(e));if(void 0===t&&(t=0),void 0===r&&(r=e?e.length:0),void 0===n&&(n=0),void 0===f&&(f=this.length),t<0||r>e.length||n<0||f>this.length)throw new RangeError("out of range index");if(n>=f&&t>=r)return 0;if(n>=f)return-1;if(t>=r)return 1;if(this===e)return 0;for(var i=(f>>>=0)-(n>>>=0),o=(r>>>=0)-(t>>>=0),u=Math.min(i,o),s=this.slice(n,f),a=e.slice(t,r),h=0;h<u;++h)if(s[h]!==a[h]){i=s[h],o=a[h];break}return i<o?-1:o<i?1:0},Buffer.prototype.includes=function(e,t,r){return-1!==this.indexOf(e,t,r)},Buffer.prototype.indexOf=function(e,t,r){return bidirectionalIndexOf(this,e,t,r,!0)},Buffer.prototype.lastIndexOf=function(e,t,r){return bidirectionalIndexOf(this,e,t,r,!1)},Buffer.prototype.write=function(e,t,r,n){if(void 0===t)n="utf8",r=this.length,t=0;else if(void 0===r&&"string"==typeof t)n=t,r=this.length,t=0;else{if(!isFinite(t))throw new Error("Buffer.write(string, encoding, offset[, length]) is no longer supported");t>>>=0,isFinite(r)?(r>>>=0,void 0===n&&(n="utf8")):(n=r,r=void 0)}var f=this.length-t;if((void 0===r||r>f)&&(r=f),e.length>0&&(r<0||t<0)||t>this.length)throw new RangeError("Attempt to write outside buffer bounds");n||(n="utf8");for(var i=!1;;)switch(n){case"hex":return hexWrite(this,e,t,r);case"utf8":case"utf-8":return utf8Write(this,e,t,r);case"ascii":return asciiWrite(this,e,t,r);case"latin1":case"binary":return latin1Write(this,e,t,r);case"base64":return base64Write(this,e,t,r);case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return ucs2Write(this,e,t,r);default:if(i)throw new TypeError("Unknown encoding: "+n);n=(""+n).toLowerCase(),i=!0}},Buffer.prototype.toJSON=function(){return{type:"Buffer",data:Array.prototype.slice.call(this._arr||this,0)}};var MAX_ARGUMENTS_LENGTH=4096;function decodeCodePointsArray(e){var t=e.length;if(t<=MAX_ARGUMENTS_LENGTH)return String.fromCharCode.apply(String,e);for(var r="",n=0;n<t;)r+=String.fromCharCode.apply(String,e.slice(n,n+=MAX_ARGUMENTS_LENGTH));return r}function asciiSlice(e,t,r){var n="";r=Math.min(e.length,r);for(var f=t;f<r;++f)n+=String.fromCharCode(127&e[f]);return n}function latin1Slice(e,t,r){var n="";r=Math.min(e.length,r);for(var f=t;f<r;++f)n+=String.fromCharCode(e[f]);return n}function hexSlice(e,t,r){var n=e.length;(!t||t<0)&&(t=0),(!r||r<0||r>n)&&(r=n);for(var f="",i=t;i<r;++i)f+=toHex(e[i]);return f}function utf16leSlice(e,t,r){for(var n=e.slice(t,r),f="",i=0;i<n.length;i+=2)f+=String.fromCharCode(n[i]+256*n[i+1]);return f}function checkOffset(e,t,r){if(e%1!=0||e<0)throw new RangeError("offset is not uint");if(e+t>r)throw new RangeError("Trying to access beyond buffer length")}function checkInt(e,t,r,n,f,i){if(!Buffer.isBuffer(e))throw new TypeError('"buffer" argument must be a Buffer instance');if(t>f||t<i)throw new RangeError('"value" argument is out of bounds');if(r+n>e.length)throw new RangeError("Index out of range")}function checkIEEE754(e,t,r,n,f,i){if(r+n>e.length)throw new RangeError("Index out of range");if(r<0)throw new RangeError("Index out of range")}function writeFloat(e,t,r,n,f){return t=+t,r>>>=0,f||checkIEEE754(e,t,r,4,3.4028234663852886e38,-3.4028234663852886e38),ieee754.write(e,t,r,n,23,4),r+4}function writeDouble(e,t,r,n,f){return t=+t,r>>>=0,f||checkIEEE754(e,t,r,8,1.7976931348623157e308,-1.7976931348623157e308),ieee754.write(e,t,r,n,52,8),r+8}Buffer.prototype.slice=function(e,t){var r=this.length;(e=~~e)<0?(e+=r)<0&&(e=0):e>r&&(e=r),(t=void 0===t?r:~~t)<0?(t+=r)<0&&(t=0):t>r&&(t=r),t<e&&(t=e);var n=this.subarray(e,t);return n.__proto__=Buffer.prototype,n},Buffer.prototype.readUIntLE=function(e,t,r){e>>>=0,t>>>=0,r||checkOffset(e,t,this.length);for(var n=this[e],f=1,i=0;++i<t&&(f*=256);)n+=this[e+i]*f;return n},Buffer.prototype.readUIntBE=function(e,t,r){e>>>=0,t>>>=0,r||checkOffset(e,t,this.length);for(var n=this[e+--t],f=1;t>0&&(f*=256);)n+=this[e+--t]*f;return n},Buffer.prototype.readUInt8=function(e,t){return e>>>=0,t||checkOffset(e,1,this.length),this[e]},Buffer.prototype.readUInt16LE=function(e,t){return e>>>=0,t||checkOffset(e,2,this.length),this[e]|this[e+1]<<8},Buffer.prototype.readUInt16BE=function(e,t){return e>>>=0,t||checkOffset(e,2,this.length),this[e]<<8|this[e+1]},Buffer.prototype.readUInt32LE=function(e,t){return e>>>=0,t||checkOffset(e,4,this.length),(this[e]|this[e+1]<<8|this[e+2]<<16)+16777216*this[e+3]},Buffer.prototype.readUInt32BE=function(e,t){return e>>>=0,t||checkOffset(e,4,this.length),16777216*this[e]+(this[e+1]<<16|this[e+2]<<8|this[e+3])},Buffer.prototype.readIntLE=function(e,t,r){e>>>=0,t>>>=0,r||checkOffset(e,t,this.length);for(var n=this[e],f=1,i=0;++i<t&&(f*=256);)n+=this[e+i]*f;return n>=(f*=128)&&(n-=Math.pow(2,8*t)),n},Buffer.prototype.readIntBE=function(e,t,r){e>>>=0,t>>>=0,r||checkOffset(e,t,this.length);for(var n=t,f=1,i=this[e+--n];n>0&&(f*=256);)i+=this[e+--n]*f;return i>=(f*=128)&&(i-=Math.pow(2,8*t)),i},Buffer.prototype.readInt8=function(e,t){return e>>>=0,t||checkOffset(e,1,this.length),128&this[e]?-1*(255-this[e]+1):this[e]},Buffer.prototype.readInt16LE=function(e,t){e>>>=0,t||checkOffset(e,2,this.length);var r=this[e]|this[e+1]<<8;return 32768&r?4294901760|r:r},Buffer.prototype.readInt16BE=function(e,t){e>>>=0,t||checkOffset(e,2,this.length);var r=this[e+1]|this[e]<<8;return 32768&r?4294901760|r:r},Buffer.prototype.readInt32LE=function(e,t){return e>>>=0,t||checkOffset(e,4,this.length),this[e]|this[e+1]<<8|this[e+2]<<16|this[e+3]<<24},Buffer.prototype.readInt32BE=function(e,t){return e>>>=0,t||checkOffset(e,4,this.length),this[e]<<24|this[e+1]<<16|this[e+2]<<8|this[e+3]},Buffer.prototype.readFloatLE=function(e,t){return e>>>=0,t||checkOffset(e,4,this.length),ieee754.read(this,e,!0,23,4)},Buffer.prototype.readFloatBE=function(e,t){return e>>>=0,t||checkOffset(e,4,this.length),ieee754.read(this,e,!1,23,4)},Buffer.prototype.readDoubleLE=function(e,t){return e>>>=0,t||checkOffset(e,8,this.length),ieee754.read(this,e,!0,52,8)},Buffer.prototype.readDoubleBE=function(e,t){return e>>>=0,t||checkOffset(e,8,this.length),ieee754.read(this,e,!1,52,8)},Buffer.prototype.writeUIntLE=function(e,t,r,n){(e=+e,t>>>=0,r>>>=0,n)||checkInt(this,e,t,r,Math.pow(2,8*r)-1,0);var f=1,i=0;for(this[t]=255&e;++i<r&&(f*=256);)this[t+i]=e/f&255;return t+r},Buffer.prototype.writeUIntBE=function(e,t,r,n){(e=+e,t>>>=0,r>>>=0,n)||checkInt(this,e,t,r,Math.pow(2,8*r)-1,0);var f=r-1,i=1;for(this[t+f]=255&e;--f>=0&&(i*=256);)this[t+f]=e/i&255;return t+r},Buffer.prototype.writeUInt8=function(e,t,r){return e=+e,t>>>=0,r||checkInt(this,e,t,1,255,0),this[t]=255&e,t+1},Buffer.prototype.writeUInt16LE=function(e,t,r){return e=+e,t>>>=0,r||checkInt(this,e,t,2,65535,0),this[t]=255&e,this[t+1]=e>>>8,t+2},Buffer.prototype.writeUInt16BE=function(e,t,r){return e=+e,t>>>=0,r||checkInt(this,e,t,2,65535,0),this[t]=e>>>8,this[t+1]=255&e,t+2},Buffer.prototype.writeUInt32LE=function(e,t,r){return e=+e,t>>>=0,r||checkInt(this,e,t,4,4294967295,0),this[t+3]=e>>>24,this[t+2]=e>>>16,this[t+1]=e>>>8,this[t]=255&e,t+4},Buffer.prototype.writeUInt32BE=function(e,t,r){return e=+e,t>>>=0,r||checkInt(this,e,t,4,4294967295,0),this[t]=e>>>24,this[t+1]=e>>>16,this[t+2]=e>>>8,this[t+3]=255&e,t+4},Buffer.prototype.writeIntLE=function(e,t,r,n){if(e=+e,t>>>=0,!n){var f=Math.pow(2,8*r-1);checkInt(this,e,t,r,f-1,-f)}var i=0,o=1,u=0;for(this[t]=255&e;++i<r&&(o*=256);)e<0&&0===u&&0!==this[t+i-1]&&(u=1),this[t+i]=(e/o>>0)-u&255;return t+r},Buffer.prototype.writeIntBE=function(e,t,r,n){if(e=+e,t>>>=0,!n){var f=Math.pow(2,8*r-1);checkInt(this,e,t,r,f-1,-f)}var i=r-1,o=1,u=0;for(this[t+i]=255&e;--i>=0&&(o*=256);)e<0&&0===u&&0!==this[t+i+1]&&(u=1),this[t+i]=(e/o>>0)-u&255;return t+r},Buffer.prototype.writeInt8=function(e,t,r){return e=+e,t>>>=0,r||checkInt(this,e,t,1,127,-128),e<0&&(e=255+e+1),this[t]=255&e,t+1},Buffer.prototype.writeInt16LE=function(e,t,r){return e=+e,t>>>=0,r||checkInt(this,e,t,2,32767,-32768),this[t]=255&e,this[t+1]=e>>>8,t+2},Buffer.prototype.writeInt16BE=function(e,t,r){return e=+e,t>>>=0,r||checkInt(this,e,t,2,32767,-32768),this[t]=e>>>8,this[t+1]=255&e,t+2},Buffer.prototype.writeInt32LE=function(e,t,r){return e=+e,t>>>=0,r||checkInt(this,e,t,4,2147483647,-2147483648),this[t]=255&e,this[t+1]=e>>>8,this[t+2]=e>>>16,this[t+3]=e>>>24,t+4},Buffer.prototype.writeInt32BE=function(e,t,r){return e=+e,t>>>=0,r||checkInt(this,e,t,4,2147483647,-2147483648),e<0&&(e=4294967295+e+1),this[t]=e>>>24,this[t+1]=e>>>16,this[t+2]=e>>>8,this[t+3]=255&e,t+4},Buffer.prototype.writeFloatLE=function(e,t,r){return writeFloat(this,e,t,!0,r)},Buffer.prototype.writeFloatBE=function(e,t,r){return writeFloat(this,e,t,!1,r)},Buffer.prototype.writeDoubleLE=function(e,t,r){return writeDouble(this,e,t,!0,r)},Buffer.prototype.writeDoubleBE=function(e,t,r){return writeDouble(this,e,t,!1,r)},Buffer.prototype.copy=function(e,t,r,n){if(!Buffer.isBuffer(e))throw new TypeError("argument should be a Buffer");if(r||(r=0),n||0===n||(n=this.length),t>=e.length&&(t=e.length),t||(t=0),n>0&&n<r&&(n=r),n===r)return 0;if(0===e.length||0===this.length)return 0;if(t<0)throw new RangeError("targetStart out of bounds");if(r<0||r>=this.length)throw new RangeError("Index out of range");if(n<0)throw new RangeError("sourceEnd out of bounds");n>this.length&&(n=this.length),e.length-t<n-r&&(n=e.length-t+r);var f=n-r;if(this===e&&"function"==typeof Uint8Array.prototype.copyWithin)this.copyWithin(t,r,n);else if(this===e&&r<t&&t<n)for(var i=f-1;i>=0;--i)e[i+t]=this[i+r];else Uint8Array.prototype.set.call(e,this.subarray(r,n),t);return f},Buffer.prototype.fill=function(e,t,r,n){if("string"==typeof e){if("string"==typeof t?(n=t,t=0,r=this.length):"string"==typeof r&&(n=r,r=this.length),void 0!==n&&"string"!=typeof n)throw new TypeError("encoding must be a string");if("string"==typeof n&&!Buffer.isEncoding(n))throw new TypeError("Unknown encoding: "+n);if(1===e.length){var f=e.charCodeAt(0);("utf8"===n&&f<128||"latin1"===n)&&(e=f)}}else"number"==typeof e&&(e&=255);if(t<0||this.length<t||this.length<r)throw new RangeError("Out of range index");if(r<=t)return this;var i;if(t>>>=0,r=void 0===r?this.length:r>>>0,e||(e=0),"number"==typeof e)for(i=t;i<r;++i)this[i]=e;else{var o=Buffer.isBuffer(e)?e:Buffer.from(e,n),u=o.length;if(0===u)throw new TypeError('The value "'+e+'" is invalid for argument "value"');for(i=0;i<r-t;++i)this[i+t]=o[i%u]}return this};var INVALID_BASE64_RE=/[^+\/0-9A-Za-z-_]/g;function base64clean(e){if((e=(e=e.split("=")[0]).trim().replace(INVALID_BASE64_RE,"")).length<2)return"";for(;e.length%4!=0;)e+="=";return e}function toHex(e){return e<16?"0"+e.toString(16):e.toString(16)}function utf8ToBytes(e,t){var r;t=t||1/0;for(var n=e.length,f=null,i=[],o=0;o<n;++o){if((r=e.charCodeAt(o))>55295&&r<57344){if(!f){if(r>56319){(t-=3)>-1&&i.push(239,191,189);continue}if(o+1===n){(t-=3)>-1&&i.push(239,191,189);continue}f=r;continue}if(r<56320){(t-=3)>-1&&i.push(239,191,189),f=r;continue}r=65536+(f-55296<<10|r-56320)}else f&&(t-=3)>-1&&i.push(239,191,189);if(f=null,r<128){if((t-=1)<0)break;i.push(r)}else if(r<2048){if((t-=2)<0)break;i.push(r>>6|192,63&r|128)}else if(r<65536){if((t-=3)<0)break;i.push(r>>12|224,r>>6&63|128,63&r|128)}else{if(!(r<1114112))throw new Error("Invalid code point");if((t-=4)<0)break;i.push(r>>18|240,r>>12&63|128,r>>6&63|128,63&r|128)}}return i}function asciiToBytes(e){for(var t=[],r=0;r<e.length;++r)t.push(255&e.charCodeAt(r));return t}function utf16leToBytes(e,t){for(var r,n,f,i=[],o=0;o<e.length&&!((t-=2)<0);++o)n=(r=e.charCodeAt(o))>>8,f=r%256,i.push(f),i.push(n);return i}function base64ToBytes(e){return base64.toByteArray(base64clean(e))}function blitBuffer(e,t,r,n){for(var f=0;f<n&&!(f+r>=t.length||f>=e.length);++f)t[f+r]=e[f];return f}function isInstance(e,t){return e instanceof t||null!=e&&null!=e.constructor&&null!=e.constructor.name&&e.constructor.name===t.name}function numberIsNaN(e){return e!=e}
+
+}).call(this,require("buffer").Buffer)
+},{"base64-js":2,"buffer":4,"ieee754":6}],5:[function(require,module,exports){
+(function (global){
+"use strict";function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}!function(e,t){"function"==typeof define&&define.amd?define([],t):"undefined"!=typeof exports?t():(t(),(void 0).FileSaver={})}(0,function(){function e(e,t,o){var n=new XMLHttpRequest;n.open("GET",e),n.responseType="blob",n.onload=function(){i(n.response,t,o)},n.onerror=function(){console.error("could not download file")},n.send()}function t(e){var t=new XMLHttpRequest;t.open("HEAD",e,!1);try{t.send()}catch(e){}return 200<=t.status&&299>=t.status}function o(e){try{e.dispatchEvent(new MouseEvent("click"))}catch(o){var t=document.createEvent("MouseEvents");t.initMouseEvent("click",!0,!0,window,0,0,0,80,20,!1,!1,!1,!1,0,null),e.dispatchEvent(t)}}var n="object"==("undefined"==typeof window?"undefined":_typeof(window))&&window.window===window?window:"object"==("undefined"==typeof self?"undefined":_typeof(self))&&self.self===self?self:"object"==("undefined"==typeof global?"undefined":_typeof(global))&&global.global===global?global:void 0,i=n.saveAs||("object"!=("undefined"==typeof window?"undefined":_typeof(window))||window!==n?function(){}:"download"in HTMLAnchorElement.prototype?function(i,a,r){var f=n.URL||n.webkitURL,d=document.createElement("a");a=a||i.name||"download",d.download=a,d.rel="noopener","string"==typeof i?(d.href=i,d.origin===location.origin?o(d):t(d.href)?e(i,a,r):o(d,d.target="_blank")):(d.href=f.createObjectURL(i),setTimeout(function(){f.revokeObjectURL(d.href)},4e4),setTimeout(function(){o(d)},0))}:"msSaveOrOpenBlob"in navigator?function(n,i,a){if(i=i||n.name||"download","string"!=typeof n)navigator.msSaveOrOpenBlob(function(e,t){return void 0===t?t={autoBom:!1}:"object"!=_typeof(t)&&(console.warn("Deprecated: Expected third argument to be a object"),t={autoBom:!t}),t.autoBom&&/^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(e.type)?new Blob(["\ufeff",e],{type:e.type}):e}(n,a),i);else if(t(n))e(n,i,a);else{var r=document.createElement("a");r.href=n,r.target="_blank",setTimeout(function(){o(r)})}}:function(t,o,i,a){if((a=a||open("","_blank"))&&(a.document.title=a.document.body.innerText="downloading..."),"string"==typeof t)return e(t,o,i);var r="application/octet-stream"===t.type,f=/constructor/i.test(n.HTMLElement)||n.safari,d=/CriOS\/[\d]+/.test(navigator.userAgent);if((d||r&&f)&&"object"==("undefined"==typeof FileReader?"undefined":_typeof(FileReader))){var l=new FileReader;l.onloadend=function(){var e=l.result;e=d?e:e.replace(/^data:[^;]*;/,"data:attachment/file;"),a?a.location.href=e:location=e,a=null},l.readAsDataURL(t)}else{var c=n.URL||n.webkitURL,u=c.createObjectURL(t);a?a.location=u:location.href=u,a=null,setTimeout(function(){c.revokeObjectURL(u)},4e4)}});n.saveAs=i.saveAs=i,"undefined"!=typeof module&&(module.exports=i)});
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],6:[function(require,module,exports){
+"use strict";exports.read=function(t,a,o,r,h){var M,p,w=8*h-r-1,e=(1<<w)-1,f=e>>1,i=-7,s=o?h-1:0,N=o?-1:1,n=t[a+s];for(s+=N,M=n&(1<<-i)-1,n>>=-i,i+=w;i>0;M=256*M+t[a+s],s+=N,i-=8);for(p=M&(1<<-i)-1,M>>=-i,i+=r;i>0;p=256*p+t[a+s],s+=N,i-=8);if(0===M)M=1-f;else{if(M===e)return p?NaN:1/0*(n?-1:1);p+=Math.pow(2,r),M-=f}return(n?-1:1)*p*Math.pow(2,M-r)},exports.write=function(t,a,o,r,h,M){var p,w,e,f=8*M-h-1,i=(1<<f)-1,s=i>>1,N=23===h?Math.pow(2,-24)-Math.pow(2,-77):0,n=r?0:M-1,u=r?1:-1,c=a<0||0===a&&1/a<0?1:0;for(a=Math.abs(a),isNaN(a)||a===1/0?(w=isNaN(a)?1:0,p=i):(p=Math.floor(Math.log(a)/Math.LN2),a*(e=Math.pow(2,-p))<1&&(p--,e*=2),(a+=p+s>=1?N/e:N*Math.pow(2,1-s))*e>=2&&(p++,e/=2),p+s>=i?(w=0,p=i):p+s>=1?(w=(a*e-1)*Math.pow(2,h),p+=s):(w=a*Math.pow(2,s-1)*Math.pow(2,h),p=0));h>=8;t[o+n]=255&w,n+=u,w/=256,h-=8);for(p=p<<h|w,f+=h;f>0;t[o+n]=255&p,n+=u,p/=256,f-=8);t[o+n-u]|=128*c};
+
+},{}],7:[function(require,module,exports){
+(function (Buffer){
+"use strict";var tweetnacl=require("tweetnacl");exports.key=function(){return Buffer(tweetnacl.randomBytes(tweetnacl.lowlevel.crypto_secretbox_KEYBYTES))},exports.nonce=function(){return Buffer(tweetnacl.randomBytes(tweetnacl.lowlevel.crypto_box_NONCEBYTES))},exports.encrypt=function(e,t,r){return Buffer(tweetnacl.secretbox(e,t,r))},exports.decrypt=function(e,t,r){var n=tweetnacl.secretbox.open(e,t,r);return n?Buffer(n):null},exports.scalarMultiplication=function(e,t){return Buffer(tweetnacl.scalarMult(e,t))},exports.scalarMultiplicationKeyPair=function(e){return e||(e=Buffer(tweetnacl.randomBytes(tweetnacl.lowlevel.crypto_scalarmult_SCALARBYTES))),{secretKey:e,publicKey:Buffer(tweetnacl.scalarMult.base(e))}};
+
+}).call(this,require("buffer").Buffer)
+},{"buffer":4,"tweetnacl":8}],8:[function(require,module,exports){
+"use strict";!function(r){var t=function(r){var t,n=new Float64Array(16);if(r)for(t=0;t<r.length;t++)n[t]=r[t];return n},n=function(){throw new Error("no PRNG")},e=new Uint8Array(16),o=new Uint8Array(32);o[0]=9;var i=t(),h=t([1]),a=t([56129,1]),f=t([30883,4953,19914,30187,55467,16705,2637,112,59544,30585,16505,36039,65139,11119,27886,20995]),s=t([61785,9906,39828,60374,45398,33411,5274,224,53552,61171,33010,6542,64743,22239,55772,9222]),c=t([54554,36645,11616,51542,42930,38181,51040,26924,56412,64982,57905,49316,21502,52590,14035,8553]),u=t([26200,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214,26214]),y=t([41136,18958,6951,50414,58488,44335,6150,12099,55207,15867,153,11085,57099,20417,9344,11139]);function l(r,t,n,e){r[t]=n>>24&255,r[t+1]=n>>16&255,r[t+2]=n>>8&255,r[t+3]=255&n,r[t+4]=e>>24&255,r[t+5]=e>>16&255,r[t+6]=e>>8&255,r[t+7]=255&e}function w(r,t,n,e,o){var i,h=0;for(i=0;i<o;i++)h|=r[t+i]^n[e+i];return(1&h-1>>>8)-1}function v(r,t,n,e){return w(r,t,n,e,16)}function p(r,t,n,e){return w(r,t,n,e,32)}function b(r,t,n,e){!function(r,t,n,e){for(var o,i=255&e[0]|(255&e[1])<<8|(255&e[2])<<16|(255&e[3])<<24,h=255&n[0]|(255&n[1])<<8|(255&n[2])<<16|(255&n[3])<<24,a=255&n[4]|(255&n[5])<<8|(255&n[6])<<16|(255&n[7])<<24,f=255&n[8]|(255&n[9])<<8|(255&n[10])<<16|(255&n[11])<<24,s=255&n[12]|(255&n[13])<<8|(255&n[14])<<16|(255&n[15])<<24,c=255&e[4]|(255&e[5])<<8|(255&e[6])<<16|(255&e[7])<<24,u=255&t[0]|(255&t[1])<<8|(255&t[2])<<16|(255&t[3])<<24,y=255&t[4]|(255&t[5])<<8|(255&t[6])<<16|(255&t[7])<<24,l=255&t[8]|(255&t[9])<<8|(255&t[10])<<16|(255&t[11])<<24,w=255&t[12]|(255&t[13])<<8|(255&t[14])<<16|(255&t[15])<<24,v=255&e[8]|(255&e[9])<<8|(255&e[10])<<16|(255&e[11])<<24,p=255&n[16]|(255&n[17])<<8|(255&n[18])<<16|(255&n[19])<<24,b=255&n[20]|(255&n[21])<<8|(255&n[22])<<16|(255&n[23])<<24,g=255&n[24]|(255&n[25])<<8|(255&n[26])<<16|(255&n[27])<<24,_=255&n[28]|(255&n[29])<<8|(255&n[30])<<16|(255&n[31])<<24,A=255&e[12]|(255&e[13])<<8|(255&e[14])<<16|(255&e[15])<<24,d=i,U=h,E=a,x=f,M=s,m=c,B=u,S=y,K=l,T=w,Y=v,k=p,L=b,z=g,R=_,P=A,O=0;O<20;O+=2)d^=(o=(L^=(o=(K^=(o=(M^=(o=d+L|0)<<7|o>>>25)+d|0)<<9|o>>>23)+M|0)<<13|o>>>19)+K|0)<<18|o>>>14,m^=(o=(U^=(o=(z^=(o=(T^=(o=m+U|0)<<7|o>>>25)+m|0)<<9|o>>>23)+T|0)<<13|o>>>19)+z|0)<<18|o>>>14,Y^=(o=(B^=(o=(E^=(o=(R^=(o=Y+B|0)<<7|o>>>25)+Y|0)<<9|o>>>23)+R|0)<<13|o>>>19)+E|0)<<18|o>>>14,P^=(o=(k^=(o=(S^=(o=(x^=(o=P+k|0)<<7|o>>>25)+P|0)<<9|o>>>23)+x|0)<<13|o>>>19)+S|0)<<18|o>>>14,d^=(o=(x^=(o=(E^=(o=(U^=(o=d+x|0)<<7|o>>>25)+d|0)<<9|o>>>23)+U|0)<<13|o>>>19)+E|0)<<18|o>>>14,m^=(o=(M^=(o=(S^=(o=(B^=(o=m+M|0)<<7|o>>>25)+m|0)<<9|o>>>23)+B|0)<<13|o>>>19)+S|0)<<18|o>>>14,Y^=(o=(T^=(o=(K^=(o=(k^=(o=Y+T|0)<<7|o>>>25)+Y|0)<<9|o>>>23)+k|0)<<13|o>>>19)+K|0)<<18|o>>>14,P^=(o=(R^=(o=(z^=(o=(L^=(o=P+R|0)<<7|o>>>25)+P|0)<<9|o>>>23)+L|0)<<13|o>>>19)+z|0)<<18|o>>>14;d=d+i|0,U=U+h|0,E=E+a|0,x=x+f|0,M=M+s|0,m=m+c|0,B=B+u|0,S=S+y|0,K=K+l|0,T=T+w|0,Y=Y+v|0,k=k+p|0,L=L+b|0,z=z+g|0,R=R+_|0,P=P+A|0,r[0]=d>>>0&255,r[1]=d>>>8&255,r[2]=d>>>16&255,r[3]=d>>>24&255,r[4]=U>>>0&255,r[5]=U>>>8&255,r[6]=U>>>16&255,r[7]=U>>>24&255,r[8]=E>>>0&255,r[9]=E>>>8&255,r[10]=E>>>16&255,r[11]=E>>>24&255,r[12]=x>>>0&255,r[13]=x>>>8&255,r[14]=x>>>16&255,r[15]=x>>>24&255,r[16]=M>>>0&255,r[17]=M>>>8&255,r[18]=M>>>16&255,r[19]=M>>>24&255,r[20]=m>>>0&255,r[21]=m>>>8&255,r[22]=m>>>16&255,r[23]=m>>>24&255,r[24]=B>>>0&255,r[25]=B>>>8&255,r[26]=B>>>16&255,r[27]=B>>>24&255,r[28]=S>>>0&255,r[29]=S>>>8&255,r[30]=S>>>16&255,r[31]=S>>>24&255,r[32]=K>>>0&255,r[33]=K>>>8&255,r[34]=K>>>16&255,r[35]=K>>>24&255,r[36]=T>>>0&255,r[37]=T>>>8&255,r[38]=T>>>16&255,r[39]=T>>>24&255,r[40]=Y>>>0&255,r[41]=Y>>>8&255,r[42]=Y>>>16&255,r[43]=Y>>>24&255,r[44]=k>>>0&255,r[45]=k>>>8&255,r[46]=k>>>16&255,r[47]=k>>>24&255,r[48]=L>>>0&255,r[49]=L>>>8&255,r[50]=L>>>16&255,r[51]=L>>>24&255,r[52]=z>>>0&255,r[53]=z>>>8&255,r[54]=z>>>16&255,r[55]=z>>>24&255,r[56]=R>>>0&255,r[57]=R>>>8&255,r[58]=R>>>16&255,r[59]=R>>>24&255,r[60]=P>>>0&255,r[61]=P>>>8&255,r[62]=P>>>16&255,r[63]=P>>>24&255}(r,t,n,e)}function g(r,t,n,e){!function(r,t,n,e){for(var o,i=255&e[0]|(255&e[1])<<8|(255&e[2])<<16|(255&e[3])<<24,h=255&n[0]|(255&n[1])<<8|(255&n[2])<<16|(255&n[3])<<24,a=255&n[4]|(255&n[5])<<8|(255&n[6])<<16|(255&n[7])<<24,f=255&n[8]|(255&n[9])<<8|(255&n[10])<<16|(255&n[11])<<24,s=255&n[12]|(255&n[13])<<8|(255&n[14])<<16|(255&n[15])<<24,c=255&e[4]|(255&e[5])<<8|(255&e[6])<<16|(255&e[7])<<24,u=255&t[0]|(255&t[1])<<8|(255&t[2])<<16|(255&t[3])<<24,y=255&t[4]|(255&t[5])<<8|(255&t[6])<<16|(255&t[7])<<24,l=255&t[8]|(255&t[9])<<8|(255&t[10])<<16|(255&t[11])<<24,w=255&t[12]|(255&t[13])<<8|(255&t[14])<<16|(255&t[15])<<24,v=255&e[8]|(255&e[9])<<8|(255&e[10])<<16|(255&e[11])<<24,p=255&n[16]|(255&n[17])<<8|(255&n[18])<<16|(255&n[19])<<24,b=255&n[20]|(255&n[21])<<8|(255&n[22])<<16|(255&n[23])<<24,g=255&n[24]|(255&n[25])<<8|(255&n[26])<<16|(255&n[27])<<24,_=255&n[28]|(255&n[29])<<8|(255&n[30])<<16|(255&n[31])<<24,A=255&e[12]|(255&e[13])<<8|(255&e[14])<<16|(255&e[15])<<24,d=0;d<20;d+=2)i^=(o=(b^=(o=(l^=(o=(s^=(o=i+b|0)<<7|o>>>25)+i|0)<<9|o>>>23)+s|0)<<13|o>>>19)+l|0)<<18|o>>>14,c^=(o=(h^=(o=(g^=(o=(w^=(o=c+h|0)<<7|o>>>25)+c|0)<<9|o>>>23)+w|0)<<13|o>>>19)+g|0)<<18|o>>>14,v^=(o=(u^=(o=(a^=(o=(_^=(o=v+u|0)<<7|o>>>25)+v|0)<<9|o>>>23)+_|0)<<13|o>>>19)+a|0)<<18|o>>>14,A^=(o=(p^=(o=(y^=(o=(f^=(o=A+p|0)<<7|o>>>25)+A|0)<<9|o>>>23)+f|0)<<13|o>>>19)+y|0)<<18|o>>>14,i^=(o=(f^=(o=(a^=(o=(h^=(o=i+f|0)<<7|o>>>25)+i|0)<<9|o>>>23)+h|0)<<13|o>>>19)+a|0)<<18|o>>>14,c^=(o=(s^=(o=(y^=(o=(u^=(o=c+s|0)<<7|o>>>25)+c|0)<<9|o>>>23)+u|0)<<13|o>>>19)+y|0)<<18|o>>>14,v^=(o=(w^=(o=(l^=(o=(p^=(o=v+w|0)<<7|o>>>25)+v|0)<<9|o>>>23)+p|0)<<13|o>>>19)+l|0)<<18|o>>>14,A^=(o=(_^=(o=(g^=(o=(b^=(o=A+_|0)<<7|o>>>25)+A|0)<<9|o>>>23)+b|0)<<13|o>>>19)+g|0)<<18|o>>>14;r[0]=i>>>0&255,r[1]=i>>>8&255,r[2]=i>>>16&255,r[3]=i>>>24&255,r[4]=c>>>0&255,r[5]=c>>>8&255,r[6]=c>>>16&255,r[7]=c>>>24&255,r[8]=v>>>0&255,r[9]=v>>>8&255,r[10]=v>>>16&255,r[11]=v>>>24&255,r[12]=A>>>0&255,r[13]=A>>>8&255,r[14]=A>>>16&255,r[15]=A>>>24&255,r[16]=u>>>0&255,r[17]=u>>>8&255,r[18]=u>>>16&255,r[19]=u>>>24&255,r[20]=y>>>0&255,r[21]=y>>>8&255,r[22]=y>>>16&255,r[23]=y>>>24&255,r[24]=l>>>0&255,r[25]=l>>>8&255,r[26]=l>>>16&255,r[27]=l>>>24&255,r[28]=w>>>0&255,r[29]=w>>>8&255,r[30]=w>>>16&255,r[31]=w>>>24&255}(r,t,n,e)}var _=new Uint8Array([101,120,112,97,110,100,32,51,50,45,98,121,116,101,32,107]);function A(r,t,n,e,o,i,h){var a,f,s=new Uint8Array(16),c=new Uint8Array(64);for(f=0;f<16;f++)s[f]=0;for(f=0;f<8;f++)s[f]=i[f];for(;o>=64;){for(b(c,s,h,_),f=0;f<64;f++)r[t+f]=n[e+f]^c[f];for(a=1,f=8;f<16;f++)a=a+(255&s[f])|0,s[f]=255&a,a>>>=8;o-=64,t+=64,e+=64}if(o>0)for(b(c,s,h,_),f=0;f<o;f++)r[t+f]=n[e+f]^c[f];return 0}function d(r,t,n,e,o){var i,h,a=new Uint8Array(16),f=new Uint8Array(64);for(h=0;h<16;h++)a[h]=0;for(h=0;h<8;h++)a[h]=e[h];for(;n>=64;){for(b(f,a,o,_),h=0;h<64;h++)r[t+h]=f[h];for(i=1,h=8;h<16;h++)i=i+(255&a[h])|0,a[h]=255&i,i>>>=8;n-=64,t+=64}if(n>0)for(b(f,a,o,_),h=0;h<n;h++)r[t+h]=f[h];return 0}function U(r,t,n,e,o){var i=new Uint8Array(32);g(i,e,o,_);for(var h=new Uint8Array(8),a=0;a<8;a++)h[a]=e[a+16];return d(r,t,n,h,i)}function E(r,t,n,e,o,i,h){var a=new Uint8Array(32);g(a,i,h,_);for(var f=new Uint8Array(8),s=0;s<8;s++)f[s]=i[s+16];return A(r,t,n,e,o,f,a)}var x=function(r){var t,n,e,o,i,h,a,f;this.buffer=new Uint8Array(16),this.r=new Uint16Array(10),this.h=new Uint16Array(10),this.pad=new Uint16Array(8),this.leftover=0,this.fin=0,t=255&r[0]|(255&r[1])<<8,this.r[0]=8191&t,n=255&r[2]|(255&r[3])<<8,this.r[1]=8191&(t>>>13|n<<3),e=255&r[4]|(255&r[5])<<8,this.r[2]=7939&(n>>>10|e<<6),o=255&r[6]|(255&r[7])<<8,this.r[3]=8191&(e>>>7|o<<9),i=255&r[8]|(255&r[9])<<8,this.r[4]=255&(o>>>4|i<<12),this.r[5]=i>>>1&8190,h=255&r[10]|(255&r[11])<<8,this.r[6]=8191&(i>>>14|h<<2),a=255&r[12]|(255&r[13])<<8,this.r[7]=8065&(h>>>11|a<<5),f=255&r[14]|(255&r[15])<<8,this.r[8]=8191&(a>>>8|f<<8),this.r[9]=f>>>5&127,this.pad[0]=255&r[16]|(255&r[17])<<8,this.pad[1]=255&r[18]|(255&r[19])<<8,this.pad[2]=255&r[20]|(255&r[21])<<8,this.pad[3]=255&r[22]|(255&r[23])<<8,this.pad[4]=255&r[24]|(255&r[25])<<8,this.pad[5]=255&r[26]|(255&r[27])<<8,this.pad[6]=255&r[28]|(255&r[29])<<8,this.pad[7]=255&r[30]|(255&r[31])<<8};function M(r,t,n,e,o,i){var h=new x(i);return h.update(n,e,o),h.finish(r,t),0}function m(r,t,n,e,o,i){var h=new Uint8Array(16);return M(h,0,n,e,o,i),v(r,t,h,0)}function B(r,t,n,e,o){var i;if(n<32)return-1;for(E(r,0,t,0,n,e,o),M(r,16,r,32,n-32,r),i=0;i<16;i++)r[i]=0;return 0}function S(r,t,n,e,o){var i,h=new Uint8Array(32);if(n<32)return-1;if(U(h,0,32,e,o),0!==m(t,16,t,32,n-32,h))return-1;for(E(r,0,t,0,n,e,o),i=0;i<32;i++)r[i]=0;return 0}function K(r,t){var n;for(n=0;n<16;n++)r[n]=0|t[n]}function T(r){var t,n,e=1;for(t=0;t<16;t++)n=r[t]+e+65535,e=Math.floor(n/65536),r[t]=n-65536*e;r[0]+=e-1+37*(e-1)}function Y(r,t,n){for(var e,o=~(n-1),i=0;i<16;i++)e=o&(r[i]^t[i]),r[i]^=e,t[i]^=e}function k(r,n){var e,o,i,h=t(),a=t();for(e=0;e<16;e++)a[e]=n[e];for(T(a),T(a),T(a),o=0;o<2;o++){for(h[0]=a[0]-65517,e=1;e<15;e++)h[e]=a[e]-65535-(h[e-1]>>16&1),h[e-1]&=65535;h[15]=a[15]-32767-(h[14]>>16&1),i=h[15]>>16&1,h[14]&=65535,Y(a,h,1-i)}for(e=0;e<16;e++)r[2*e]=255&a[e],r[2*e+1]=a[e]>>8}function L(r,t){var n=new Uint8Array(32),e=new Uint8Array(32);return k(n,r),k(e,t),p(n,0,e,0)}function z(r){var t=new Uint8Array(32);return k(t,r),1&t[0]}function R(r,t){var n;for(n=0;n<16;n++)r[n]=t[2*n]+(t[2*n+1]<<8);r[15]&=32767}function P(r,t,n){for(var e=0;e<16;e++)r[e]=t[e]+n[e]}function O(r,t,n){for(var e=0;e<16;e++)r[e]=t[e]-n[e]}function N(r,t,n){var e,o,i=0,h=0,a=0,f=0,s=0,c=0,u=0,y=0,l=0,w=0,v=0,p=0,b=0,g=0,_=0,A=0,d=0,U=0,E=0,x=0,M=0,m=0,B=0,S=0,K=0,T=0,Y=0,k=0,L=0,z=0,R=0,P=n[0],O=n[1],N=n[2],C=n[3],F=n[4],I=n[5],G=n[6],Z=n[7],j=n[8],q=n[9],V=n[10],X=n[11],D=n[12],H=n[13],J=n[14],Q=n[15];i+=(e=t[0])*P,h+=e*O,a+=e*N,f+=e*C,s+=e*F,c+=e*I,u+=e*G,y+=e*Z,l+=e*j,w+=e*q,v+=e*V,p+=e*X,b+=e*D,g+=e*H,_+=e*J,A+=e*Q,h+=(e=t[1])*P,a+=e*O,f+=e*N,s+=e*C,c+=e*F,u+=e*I,y+=e*G,l+=e*Z,w+=e*j,v+=e*q,p+=e*V,b+=e*X,g+=e*D,_+=e*H,A+=e*J,d+=e*Q,a+=(e=t[2])*P,f+=e*O,s+=e*N,c+=e*C,u+=e*F,y+=e*I,l+=e*G,w+=e*Z,v+=e*j,p+=e*q,b+=e*V,g+=e*X,_+=e*D,A+=e*H,d+=e*J,U+=e*Q,f+=(e=t[3])*P,s+=e*O,c+=e*N,u+=e*C,y+=e*F,l+=e*I,w+=e*G,v+=e*Z,p+=e*j,b+=e*q,g+=e*V,_+=e*X,A+=e*D,d+=e*H,U+=e*J,E+=e*Q,s+=(e=t[4])*P,c+=e*O,u+=e*N,y+=e*C,l+=e*F,w+=e*I,v+=e*G,p+=e*Z,b+=e*j,g+=e*q,_+=e*V,A+=e*X,d+=e*D,U+=e*H,E+=e*J,x+=e*Q,c+=(e=t[5])*P,u+=e*O,y+=e*N,l+=e*C,w+=e*F,v+=e*I,p+=e*G,b+=e*Z,g+=e*j,_+=e*q,A+=e*V,d+=e*X,U+=e*D,E+=e*H,x+=e*J,M+=e*Q,u+=(e=t[6])*P,y+=e*O,l+=e*N,w+=e*C,v+=e*F,p+=e*I,b+=e*G,g+=e*Z,_+=e*j,A+=e*q,d+=e*V,U+=e*X,E+=e*D,x+=e*H,M+=e*J,m+=e*Q,y+=(e=t[7])*P,l+=e*O,w+=e*N,v+=e*C,p+=e*F,b+=e*I,g+=e*G,_+=e*Z,A+=e*j,d+=e*q,U+=e*V,E+=e*X,x+=e*D,M+=e*H,m+=e*J,B+=e*Q,l+=(e=t[8])*P,w+=e*O,v+=e*N,p+=e*C,b+=e*F,g+=e*I,_+=e*G,A+=e*Z,d+=e*j,U+=e*q,E+=e*V,x+=e*X,M+=e*D,m+=e*H,B+=e*J,S+=e*Q,w+=(e=t[9])*P,v+=e*O,p+=e*N,b+=e*C,g+=e*F,_+=e*I,A+=e*G,d+=e*Z,U+=e*j,E+=e*q,x+=e*V,M+=e*X,m+=e*D,B+=e*H,S+=e*J,K+=e*Q,v+=(e=t[10])*P,p+=e*O,b+=e*N,g+=e*C,_+=e*F,A+=e*I,d+=e*G,U+=e*Z,E+=e*j,x+=e*q,M+=e*V,m+=e*X,B+=e*D,S+=e*H,K+=e*J,T+=e*Q,p+=(e=t[11])*P,b+=e*O,g+=e*N,_+=e*C,A+=e*F,d+=e*I,U+=e*G,E+=e*Z,x+=e*j,M+=e*q,m+=e*V,B+=e*X,S+=e*D,K+=e*H,T+=e*J,Y+=e*Q,b+=(e=t[12])*P,g+=e*O,_+=e*N,A+=e*C,d+=e*F,U+=e*I,E+=e*G,x+=e*Z,M+=e*j,m+=e*q,B+=e*V,S+=e*X,K+=e*D,T+=e*H,Y+=e*J,k+=e*Q,g+=(e=t[13])*P,_+=e*O,A+=e*N,d+=e*C,U+=e*F,E+=e*I,x+=e*G,M+=e*Z,m+=e*j,B+=e*q,S+=e*V,K+=e*X,T+=e*D,Y+=e*H,k+=e*J,L+=e*Q,_+=(e=t[14])*P,A+=e*O,d+=e*N,U+=e*C,E+=e*F,x+=e*I,M+=e*G,m+=e*Z,B+=e*j,S+=e*q,K+=e*V,T+=e*X,Y+=e*D,k+=e*H,L+=e*J,z+=e*Q,A+=(e=t[15])*P,h+=38*(U+=e*N),a+=38*(E+=e*C),f+=38*(x+=e*F),s+=38*(M+=e*I),c+=38*(m+=e*G),u+=38*(B+=e*Z),y+=38*(S+=e*j),l+=38*(K+=e*q),w+=38*(T+=e*V),v+=38*(Y+=e*X),p+=38*(k+=e*D),b+=38*(L+=e*H),g+=38*(z+=e*J),_+=38*(R+=e*Q),i=(e=(i+=38*(d+=e*O))+(o=1)+65535)-65536*(o=Math.floor(e/65536)),h=(e=h+o+65535)-65536*(o=Math.floor(e/65536)),a=(e=a+o+65535)-65536*(o=Math.floor(e/65536)),f=(e=f+o+65535)-65536*(o=Math.floor(e/65536)),s=(e=s+o+65535)-65536*(o=Math.floor(e/65536)),c=(e=c+o+65535)-65536*(o=Math.floor(e/65536)),u=(e=u+o+65535)-65536*(o=Math.floor(e/65536)),y=(e=y+o+65535)-65536*(o=Math.floor(e/65536)),l=(e=l+o+65535)-65536*(o=Math.floor(e/65536)),w=(e=w+o+65535)-65536*(o=Math.floor(e/65536)),v=(e=v+o+65535)-65536*(o=Math.floor(e/65536)),p=(e=p+o+65535)-65536*(o=Math.floor(e/65536)),b=(e=b+o+65535)-65536*(o=Math.floor(e/65536)),g=(e=g+o+65535)-65536*(o=Math.floor(e/65536)),_=(e=_+o+65535)-65536*(o=Math.floor(e/65536)),A=(e=A+o+65535)-65536*(o=Math.floor(e/65536)),i=(e=(i+=o-1+37*(o-1))+(o=1)+65535)-65536*(o=Math.floor(e/65536)),h=(e=h+o+65535)-65536*(o=Math.floor(e/65536)),a=(e=a+o+65535)-65536*(o=Math.floor(e/65536)),f=(e=f+o+65535)-65536*(o=Math.floor(e/65536)),s=(e=s+o+65535)-65536*(o=Math.floor(e/65536)),c=(e=c+o+65535)-65536*(o=Math.floor(e/65536)),u=(e=u+o+65535)-65536*(o=Math.floor(e/65536)),y=(e=y+o+65535)-65536*(o=Math.floor(e/65536)),l=(e=l+o+65535)-65536*(o=Math.floor(e/65536)),w=(e=w+o+65535)-65536*(o=Math.floor(e/65536)),v=(e=v+o+65535)-65536*(o=Math.floor(e/65536)),p=(e=p+o+65535)-65536*(o=Math.floor(e/65536)),b=(e=b+o+65535)-65536*(o=Math.floor(e/65536)),g=(e=g+o+65535)-65536*(o=Math.floor(e/65536)),_=(e=_+o+65535)-65536*(o=Math.floor(e/65536)),A=(e=A+o+65535)-65536*(o=Math.floor(e/65536)),i+=o-1+37*(o-1),r[0]=i,r[1]=h,r[2]=a,r[3]=f,r[4]=s,r[5]=c,r[6]=u,r[7]=y,r[8]=l,r[9]=w,r[10]=v,r[11]=p,r[12]=b,r[13]=g,r[14]=_,r[15]=A}function C(r,t){N(r,t,t)}function F(r,n){var e,o=t();for(e=0;e<16;e++)o[e]=n[e];for(e=253;e>=0;e--)C(o,o),2!==e&&4!==e&&N(o,o,n);for(e=0;e<16;e++)r[e]=o[e]}function I(r,n,e){var o,i,h=new Uint8Array(32),f=new Float64Array(80),s=t(),c=t(),u=t(),y=t(),l=t(),w=t();for(i=0;i<31;i++)h[i]=n[i];for(h[31]=127&n[31]|64,h[0]&=248,R(f,e),i=0;i<16;i++)c[i]=f[i],y[i]=s[i]=u[i]=0;for(s[0]=y[0]=1,i=254;i>=0;--i)Y(s,c,o=h[i>>>3]>>>(7&i)&1),Y(u,y,o),P(l,s,u),O(s,s,u),P(u,c,y),O(c,c,y),C(y,l),C(w,s),N(s,u,s),N(u,c,l),P(l,s,u),O(s,s,u),C(c,s),O(u,y,w),N(s,u,a),P(s,s,y),N(u,u,s),N(s,y,w),N(y,c,f),C(c,l),Y(s,c,o),Y(u,y,o);for(i=0;i<16;i++)f[i+16]=s[i],f[i+32]=u[i],f[i+48]=c[i],f[i+64]=y[i];var v=f.subarray(32),p=f.subarray(16);return F(v,v),N(p,p,v),k(r,p),0}function G(r,t){return I(r,t,o)}function Z(r,t){return n(t,32),G(r,t)}function j(r,t,n){var o=new Uint8Array(32);return I(o,n,t),g(r,e,o,_)}x.prototype.blocks=function(r,t,n){for(var e,o,i,h,a,f,s,c,u,y,l,w,v,p,b,g,_,A,d,U=this.fin?0:2048,E=this.h[0],x=this.h[1],M=this.h[2],m=this.h[3],B=this.h[4],S=this.h[5],K=this.h[6],T=this.h[7],Y=this.h[8],k=this.h[9],L=this.r[0],z=this.r[1],R=this.r[2],P=this.r[3],O=this.r[4],N=this.r[5],C=this.r[6],F=this.r[7],I=this.r[8],G=this.r[9];n>=16;)y=u=0,y+=(E+=8191&(e=255&r[t+0]|(255&r[t+1])<<8))*L,y+=(x+=8191&(e>>>13|(o=255&r[t+2]|(255&r[t+3])<<8)<<3))*(5*G),y+=(M+=8191&(o>>>10|(i=255&r[t+4]|(255&r[t+5])<<8)<<6))*(5*I),y+=(m+=8191&(i>>>7|(h=255&r[t+6]|(255&r[t+7])<<8)<<9))*(5*F),u=(y+=(B+=8191&(h>>>4|(a=255&r[t+8]|(255&r[t+9])<<8)<<12))*(5*C))>>>13,y&=8191,y+=(S+=a>>>1&8191)*(5*N),y+=(K+=8191&(a>>>14|(f=255&r[t+10]|(255&r[t+11])<<8)<<2))*(5*O),y+=(T+=8191&(f>>>11|(s=255&r[t+12]|(255&r[t+13])<<8)<<5))*(5*P),y+=(Y+=8191&(s>>>8|(c=255&r[t+14]|(255&r[t+15])<<8)<<8))*(5*R),l=u+=(y+=(k+=c>>>5|U)*(5*z))>>>13,l+=E*z,l+=x*L,l+=M*(5*G),l+=m*(5*I),u=(l+=B*(5*F))>>>13,l&=8191,l+=S*(5*C),l+=K*(5*N),l+=T*(5*O),l+=Y*(5*P),u+=(l+=k*(5*R))>>>13,l&=8191,w=u,w+=E*R,w+=x*z,w+=M*L,w+=m*(5*G),u=(w+=B*(5*I))>>>13,w&=8191,w+=S*(5*F),w+=K*(5*C),w+=T*(5*N),w+=Y*(5*O),v=u+=(w+=k*(5*P))>>>13,v+=E*P,v+=x*R,v+=M*z,v+=m*L,u=(v+=B*(5*G))>>>13,v&=8191,v+=S*(5*I),v+=K*(5*F),v+=T*(5*C),v+=Y*(5*N),p=u+=(v+=k*(5*O))>>>13,p+=E*O,p+=x*P,p+=M*R,p+=m*z,u=(p+=B*L)>>>13,p&=8191,p+=S*(5*G),p+=K*(5*I),p+=T*(5*F),p+=Y*(5*C),b=u+=(p+=k*(5*N))>>>13,b+=E*N,b+=x*O,b+=M*P,b+=m*R,u=(b+=B*z)>>>13,b&=8191,b+=S*L,b+=K*(5*G),b+=T*(5*I),b+=Y*(5*F),g=u+=(b+=k*(5*C))>>>13,g+=E*C,g+=x*N,g+=M*O,g+=m*P,u=(g+=B*R)>>>13,g&=8191,g+=S*z,g+=K*L,g+=T*(5*G),g+=Y*(5*I),_=u+=(g+=k*(5*F))>>>13,_+=E*F,_+=x*C,_+=M*N,_+=m*O,u=(_+=B*P)>>>13,_&=8191,_+=S*R,_+=K*z,_+=T*L,_+=Y*(5*G),A=u+=(_+=k*(5*I))>>>13,A+=E*I,A+=x*F,A+=M*C,A+=m*N,u=(A+=B*O)>>>13,A&=8191,A+=S*P,A+=K*R,A+=T*z,A+=Y*L,d=u+=(A+=k*(5*G))>>>13,d+=E*G,d+=x*I,d+=M*F,d+=m*C,u=(d+=B*N)>>>13,d&=8191,d+=S*O,d+=K*P,d+=T*R,d+=Y*z,E=y=8191&(u=(u=((u+=(d+=k*L)>>>13)<<2)+u|0)+(y&=8191)|0),x=l+=u>>>=13,M=w&=8191,m=v&=8191,B=p&=8191,S=b&=8191,K=g&=8191,T=_&=8191,Y=A&=8191,k=d&=8191,t+=16,n-=16;this.h[0]=E,this.h[1]=x,this.h[2]=M,this.h[3]=m,this.h[4]=B,this.h[5]=S,this.h[6]=K,this.h[7]=T,this.h[8]=Y,this.h[9]=k},x.prototype.finish=function(r,t){var n,e,o,i,h=new Uint16Array(10);if(this.leftover){for(i=this.leftover,this.buffer[i++]=1;i<16;i++)this.buffer[i]=0;this.fin=1,this.blocks(this.buffer,0,16)}for(n=this.h[1]>>>13,this.h[1]&=8191,i=2;i<10;i++)this.h[i]+=n,n=this.h[i]>>>13,this.h[i]&=8191;for(this.h[0]+=5*n,n=this.h[0]>>>13,this.h[0]&=8191,this.h[1]+=n,n=this.h[1]>>>13,this.h[1]&=8191,this.h[2]+=n,h[0]=this.h[0]+5,n=h[0]>>>13,h[0]&=8191,i=1;i<10;i++)h[i]=this.h[i]+n,n=h[i]>>>13,h[i]&=8191;for(h[9]-=8192,e=(1^n)-1,i=0;i<10;i++)h[i]&=e;for(e=~e,i=0;i<10;i++)this.h[i]=this.h[i]&e|h[i];for(this.h[0]=65535&(this.h[0]|this.h[1]<<13),this.h[1]=65535&(this.h[1]>>>3|this.h[2]<<10),this.h[2]=65535&(this.h[2]>>>6|this.h[3]<<7),this.h[3]=65535&(this.h[3]>>>9|this.h[4]<<4),this.h[4]=65535&(this.h[4]>>>12|this.h[5]<<1|this.h[6]<<14),this.h[5]=65535&(this.h[6]>>>2|this.h[7]<<11),this.h[6]=65535&(this.h[7]>>>5|this.h[8]<<8),this.h[7]=65535&(this.h[8]>>>8|this.h[9]<<5),o=this.h[0]+this.pad[0],this.h[0]=65535&o,i=1;i<8;i++)o=(this.h[i]+this.pad[i]|0)+(o>>>16)|0,this.h[i]=65535&o;r[t+0]=this.h[0]>>>0&255,r[t+1]=this.h[0]>>>8&255,r[t+2]=this.h[1]>>>0&255,r[t+3]=this.h[1]>>>8&255,r[t+4]=this.h[2]>>>0&255,r[t+5]=this.h[2]>>>8&255,r[t+6]=this.h[3]>>>0&255,r[t+7]=this.h[3]>>>8&255,r[t+8]=this.h[4]>>>0&255,r[t+9]=this.h[4]>>>8&255,r[t+10]=this.h[5]>>>0&255,r[t+11]=this.h[5]>>>8&255,r[t+12]=this.h[6]>>>0&255,r[t+13]=this.h[6]>>>8&255,r[t+14]=this.h[7]>>>0&255,r[t+15]=this.h[7]>>>8&255},x.prototype.update=function(r,t,n){var e,o;if(this.leftover){for((o=16-this.leftover)>n&&(o=n),e=0;e<o;e++)this.buffer[this.leftover+e]=r[t+e];if(n-=o,t+=o,this.leftover+=o,this.leftover<16)return;this.blocks(this.buffer,0,16),this.leftover=0}if(n>=16&&(o=n-n%16,this.blocks(r,t,o),t+=o,n-=o),n){for(e=0;e<n;e++)this.buffer[this.leftover+e]=r[t+e];this.leftover+=n}};var q=B,V=S;var X=[1116352408,3609767458,1899447441,602891725,3049323471,3964484399,3921009573,2173295548,961987163,4081628472,1508970993,3053834265,2453635748,2937671579,2870763221,3664609560,3624381080,2734883394,310598401,1164996542,607225278,1323610764,1426881987,3590304994,1925078388,4068182383,2162078206,991336113,2614888103,633803317,3248222580,3479774868,3835390401,2666613458,4022224774,944711139,264347078,2341262773,604807628,2007800933,770255983,1495990901,1249150122,1856431235,1555081692,3175218132,1996064986,2198950837,2554220882,3999719339,2821834349,766784016,2952996808,2566594879,3210313671,3203337956,3336571891,1034457026,3584528711,2466948901,113926993,3758326383,338241895,168717936,666307205,1188179964,773529912,1546045734,1294757372,1522805485,1396182291,2643833823,1695183700,2343527390,1986661051,1014477480,2177026350,1206759142,2456956037,344077627,2730485921,1290863460,2820302411,3158454273,3259730800,3505952657,3345764771,106217008,3516065817,3606008344,3600352804,1432725776,4094571909,1467031594,275423344,851169720,430227734,3100823752,506948616,1363258195,659060556,3750685593,883997877,3785050280,958139571,3318307427,1322822218,3812723403,1537002063,2003034995,1747873779,3602036899,1955562222,1575990012,2024104815,1125592928,2227730452,2716904306,2361852424,442776044,2428436474,593698344,2756734187,3733110249,3204031479,2999351573,3329325298,3815920427,3391569614,3928383900,3515267271,566280711,3940187606,3454069534,4118630271,4000239992,116418474,1914138554,174292421,2731055270,289380356,3203993006,460393269,320620315,685471733,587496836,852142971,1086792851,1017036298,365543100,1126000580,2618297676,1288033470,3409855158,1501505948,4234509866,1607167915,987167468,1816402316,1246189591];function D(r,t,n,e){for(var o,i,h,a,f,s,c,u,y,l,w,v,p,b,g,_,A,d,U,E,x,M,m,B,S,K,T=new Int32Array(16),Y=new Int32Array(16),k=r[0],L=r[1],z=r[2],R=r[3],P=r[4],O=r[5],N=r[6],C=r[7],F=t[0],I=t[1],G=t[2],Z=t[3],j=t[4],q=t[5],V=t[6],D=t[7],H=0;e>=128;){for(U=0;U<16;U++)E=8*U+H,T[U]=n[E+0]<<24|n[E+1]<<16|n[E+2]<<8|n[E+3],Y[U]=n[E+4]<<24|n[E+5]<<16|n[E+6]<<8|n[E+7];for(U=0;U<80;U++)if(o=k,i=L,h=z,a=R,f=P,s=O,c=N,C,y=F,l=I,w=G,v=Z,p=j,b=q,g=V,D,m=65535&(M=D),B=M>>>16,S=65535&(x=C),K=x>>>16,m+=65535&(M=(j>>>14|P<<18)^(j>>>18|P<<14)^(P>>>9|j<<23)),B+=M>>>16,S+=65535&(x=(P>>>14|j<<18)^(P>>>18|j<<14)^(j>>>9|P<<23)),K+=x>>>16,m+=65535&(M=j&q^~j&V),B+=M>>>16,S+=65535&(x=P&O^~P&N),K+=x>>>16,x=X[2*U],m+=65535&(M=X[2*U+1]),B+=M>>>16,S+=65535&x,K+=x>>>16,x=T[U%16],B+=(M=Y[U%16])>>>16,S+=65535&x,K+=x>>>16,S+=(B+=(m+=65535&M)>>>16)>>>16,m=65535&(M=d=65535&m|B<<16),B=M>>>16,S=65535&(x=A=65535&S|(K+=S>>>16)<<16),K=x>>>16,m+=65535&(M=(F>>>28|k<<4)^(k>>>2|F<<30)^(k>>>7|F<<25)),B+=M>>>16,S+=65535&(x=(k>>>28|F<<4)^(F>>>2|k<<30)^(F>>>7|k<<25)),K+=x>>>16,B+=(M=F&I^F&G^I&G)>>>16,S+=65535&(x=k&L^k&z^L&z),K+=x>>>16,u=65535&(S+=(B+=(m+=65535&M)>>>16)>>>16)|(K+=S>>>16)<<16,_=65535&m|B<<16,m=65535&(M=v),B=M>>>16,S=65535&(x=a),K=x>>>16,B+=(M=d)>>>16,S+=65535&(x=A),K+=x>>>16,L=o,z=i,R=h,P=a=65535&(S+=(B+=(m+=65535&M)>>>16)>>>16)|(K+=S>>>16)<<16,O=f,N=s,C=c,k=u,I=y,G=l,Z=w,j=v=65535&m|B<<16,q=p,V=b,D=g,F=_,U%16==15)for(E=0;E<16;E++)x=T[E],m=65535&(M=Y[E]),B=M>>>16,S=65535&x,K=x>>>16,x=T[(E+9)%16],m+=65535&(M=Y[(E+9)%16]),B+=M>>>16,S+=65535&x,K+=x>>>16,A=T[(E+1)%16],m+=65535&(M=((d=Y[(E+1)%16])>>>1|A<<31)^(d>>>8|A<<24)^(d>>>7|A<<25)),B+=M>>>16,S+=65535&(x=(A>>>1|d<<31)^(A>>>8|d<<24)^A>>>7),K+=x>>>16,A=T[(E+14)%16],B+=(M=((d=Y[(E+14)%16])>>>19|A<<13)^(A>>>29|d<<3)^(d>>>6|A<<26))>>>16,S+=65535&(x=(A>>>19|d<<13)^(d>>>29|A<<3)^A>>>6),K+=x>>>16,K+=(S+=(B+=(m+=65535&M)>>>16)>>>16)>>>16,T[E]=65535&S|K<<16,Y[E]=65535&m|B<<16;m=65535&(M=F),B=M>>>16,S=65535&(x=k),K=x>>>16,x=r[0],B+=(M=t[0])>>>16,S+=65535&x,K+=x>>>16,K+=(S+=(B+=(m+=65535&M)>>>16)>>>16)>>>16,r[0]=k=65535&S|K<<16,t[0]=F=65535&m|B<<16,m=65535&(M=I),B=M>>>16,S=65535&(x=L),K=x>>>16,x=r[1],B+=(M=t[1])>>>16,S+=65535&x,K+=x>>>16,K+=(S+=(B+=(m+=65535&M)>>>16)>>>16)>>>16,r[1]=L=65535&S|K<<16,t[1]=I=65535&m|B<<16,m=65535&(M=G),B=M>>>16,S=65535&(x=z),K=x>>>16,x=r[2],B+=(M=t[2])>>>16,S+=65535&x,K+=x>>>16,K+=(S+=(B+=(m+=65535&M)>>>16)>>>16)>>>16,r[2]=z=65535&S|K<<16,t[2]=G=65535&m|B<<16,m=65535&(M=Z),B=M>>>16,S=65535&(x=R),K=x>>>16,x=r[3],B+=(M=t[3])>>>16,S+=65535&x,K+=x>>>16,K+=(S+=(B+=(m+=65535&M)>>>16)>>>16)>>>16,r[3]=R=65535&S|K<<16,t[3]=Z=65535&m|B<<16,m=65535&(M=j),B=M>>>16,S=65535&(x=P),K=x>>>16,x=r[4],B+=(M=t[4])>>>16,S+=65535&x,K+=x>>>16,K+=(S+=(B+=(m+=65535&M)>>>16)>>>16)>>>16,r[4]=P=65535&S|K<<16,t[4]=j=65535&m|B<<16,m=65535&(M=q),B=M>>>16,S=65535&(x=O),K=x>>>16,x=r[5],B+=(M=t[5])>>>16,S+=65535&x,K+=x>>>16,K+=(S+=(B+=(m+=65535&M)>>>16)>>>16)>>>16,r[5]=O=65535&S|K<<16,t[5]=q=65535&m|B<<16,m=65535&(M=V),B=M>>>16,S=65535&(x=N),K=x>>>16,x=r[6],B+=(M=t[6])>>>16,S+=65535&x,K+=x>>>16,K+=(S+=(B+=(m+=65535&M)>>>16)>>>16)>>>16,r[6]=N=65535&S|K<<16,t[6]=V=65535&m|B<<16,m=65535&(M=D),B=M>>>16,S=65535&(x=C),K=x>>>16,x=r[7],B+=(M=t[7])>>>16,S+=65535&x,K+=x>>>16,K+=(S+=(B+=(m+=65535&M)>>>16)>>>16)>>>16,r[7]=C=65535&S|K<<16,t[7]=D=65535&m|B<<16,H+=128,e-=128}return e}function H(r,t,n){var e,o=new Int32Array(8),i=new Int32Array(8),h=new Uint8Array(256),a=n;for(o[0]=1779033703,o[1]=3144134277,o[2]=1013904242,o[3]=2773480762,o[4]=1359893119,o[5]=2600822924,o[6]=528734635,o[7]=1541459225,i[0]=4089235720,i[1]=2227873595,i[2]=4271175723,i[3]=1595750129,i[4]=2917565137,i[5]=725511199,i[6]=4215389547,i[7]=327033209,D(o,i,t,n),n%=128,e=0;e<n;e++)h[e]=t[a-n+e];for(h[n]=128,h[(n=256-128*(n<112?1:0))-9]=0,l(h,n-8,a/536870912|0,a<<3),D(o,i,h,n),e=0;e<8;e++)l(r,8*e,o[e],i[e]);return 0}function J(r,n){var e=t(),o=t(),i=t(),h=t(),a=t(),f=t(),c=t(),u=t(),y=t();O(e,r[1],r[0]),O(y,n[1],n[0]),N(e,e,y),P(o,r[0],r[1]),P(y,n[0],n[1]),N(o,o,y),N(i,r[3],n[3]),N(i,i,s),N(h,r[2],n[2]),P(h,h,h),O(a,o,e),O(f,h,i),P(c,h,i),P(u,o,e),N(r[0],a,f),N(r[1],u,c),N(r[2],c,f),N(r[3],a,u)}function Q(r,t,n){var e;for(e=0;e<4;e++)Y(r[e],t[e],n)}function W(r,n){var e=t(),o=t(),i=t();F(i,n[2]),N(e,n[0],i),N(o,n[1],i),k(r,o),r[31]^=z(e)<<7}function $(r,t,n){var e,o;for(K(r[0],i),K(r[1],h),K(r[2],h),K(r[3],i),o=255;o>=0;--o)Q(r,t,e=n[o/8|0]>>(7&o)&1),J(t,r),J(r,r),Q(r,t,e)}function rr(r,n){var e=[t(),t(),t(),t()];K(e[0],c),K(e[1],u),K(e[2],h),N(e[3],c,u),$(r,e,n)}function tr(r,e,o){var i,h=new Uint8Array(64),a=[t(),t(),t(),t()];for(o||n(e,32),H(h,e,32),h[0]&=248,h[31]&=127,h[31]|=64,rr(a,h),W(r,a),i=0;i<32;i++)e[i+32]=r[i];return 0}var nr=new Float64Array([237,211,245,92,26,99,18,88,214,156,247,162,222,249,222,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16]);function er(r,t){var n,e,o,i;for(e=63;e>=32;--e){for(n=0,o=e-32,i=e-12;o<i;++o)t[o]+=n-16*t[e]*nr[o-(e-32)],n=t[o]+128>>8,t[o]-=256*n;t[o]+=n,t[e]=0}for(n=0,o=0;o<32;o++)t[o]+=n-(t[31]>>4)*nr[o],n=t[o]>>8,t[o]&=255;for(o=0;o<32;o++)t[o]-=n*nr[o];for(e=0;e<32;e++)t[e+1]+=t[e]>>8,r[e]=255&t[e]}function or(r){var t,n=new Float64Array(64);for(t=0;t<64;t++)n[t]=r[t];for(t=0;t<64;t++)r[t]=0;er(r,n)}function ir(r,n,e,o){var i,h,a=new Uint8Array(64),f=new Uint8Array(64),s=new Uint8Array(64),c=new Float64Array(64),u=[t(),t(),t(),t()];H(a,o,32),a[0]&=248,a[31]&=127,a[31]|=64;var y=e+64;for(i=0;i<e;i++)r[64+i]=n[i];for(i=0;i<32;i++)r[32+i]=a[32+i];for(H(s,r.subarray(32),e+32),or(s),rr(u,s),W(r,u),i=32;i<64;i++)r[i]=o[i];for(H(f,r,e+64),or(f),i=0;i<64;i++)c[i]=0;for(i=0;i<32;i++)c[i]=s[i];for(i=0;i<32;i++)for(h=0;h<32;h++)c[i+h]+=f[i]*a[h];return er(r.subarray(32),c),y}function hr(r,n){var e=t(),o=t(),a=t(),s=t(),c=t(),u=t(),l=t();return K(r[2],h),R(r[1],n),C(a,r[1]),N(s,a,f),O(a,a,r[2]),P(s,r[2],s),C(c,s),C(u,c),N(l,u,c),N(e,l,a),N(e,e,s),function(r,n){var e,o=t();for(e=0;e<16;e++)o[e]=n[e];for(e=250;e>=0;e--)C(o,o),1!==e&&N(o,o,n);for(e=0;e<16;e++)r[e]=o[e]}(e,e),N(e,e,a),N(e,e,s),N(e,e,s),N(r[0],e,s),C(o,r[0]),N(o,o,s),L(o,a)&&N(r[0],r[0],y),C(o,r[0]),N(o,o,s),L(o,a)?-1:(z(r[0])===n[31]>>7&&O(r[0],i,r[0]),N(r[3],r[0],r[1]),0)}function ar(r,n,e,o){var i,h=new Uint8Array(32),a=new Uint8Array(64),f=[t(),t(),t(),t()],s=[t(),t(),t(),t()];if(-1,e<64)return-1;if(hr(s,o))return-1;for(i=0;i<e;i++)r[i]=n[i];for(i=0;i<32;i++)r[i+32]=o[i];if(H(a,r,e),or(a),$(f,s,a),rr(s,n.subarray(32)),J(f,s),W(h,f),e-=64,p(n,0,h,0)){for(i=0;i<e;i++)r[i]=0;return-1}for(i=0;i<e;i++)r[i]=n[i+64];return e}var fr=32,sr=24,cr=32,ur=32,yr=sr;function lr(r,t){if(r.length!==fr)throw new Error("bad key size");if(t.length!==sr)throw new Error("bad nonce size")}function wr(){var r,t;for(t=0;t<arguments.length;t++)if("[object Uint8Array]"!==(r=Object.prototype.toString.call(arguments[t])))throw new TypeError("unexpected type "+r+", use Uint8Array")}function vr(r){for(var t=0;t<r.length;t++)r[t]=0}r.lowlevel={crypto_core_hsalsa20:g,crypto_stream_xor:E,crypto_stream:U,crypto_stream_salsa20_xor:A,crypto_stream_salsa20:d,crypto_onetimeauth:M,crypto_onetimeauth_verify:m,crypto_verify_16:v,crypto_verify_32:p,crypto_secretbox:B,crypto_secretbox_open:S,crypto_scalarmult:I,crypto_scalarmult_base:G,crypto_box_beforenm:j,crypto_box_afternm:q,crypto_box:function(r,t,n,e,o,i){var h=new Uint8Array(32);return j(h,o,i),q(r,t,n,e,h)},crypto_box_open:function(r,t,n,e,o,i){var h=new Uint8Array(32);return j(h,o,i),V(r,t,n,e,h)},crypto_box_keypair:Z,crypto_hash:H,crypto_sign:ir,crypto_sign_keypair:tr,crypto_sign_open:ar,crypto_secretbox_KEYBYTES:fr,crypto_secretbox_NONCEBYTES:sr,crypto_secretbox_ZEROBYTES:32,crypto_secretbox_BOXZEROBYTES:16,crypto_scalarmult_BYTES:32,crypto_scalarmult_SCALARBYTES:32,crypto_box_PUBLICKEYBYTES:cr,crypto_box_SECRETKEYBYTES:ur,crypto_box_BEFORENMBYTES:32,crypto_box_NONCEBYTES:yr,crypto_box_ZEROBYTES:32,crypto_box_BOXZEROBYTES:16,crypto_sign_BYTES:64,crypto_sign_PUBLICKEYBYTES:32,crypto_sign_SECRETKEYBYTES:64,crypto_sign_SEEDBYTES:32,crypto_hash_BYTES:64},r.util||(r.util={},r.util.decodeUTF8=r.util.encodeUTF8=r.util.encodeBase64=r.util.decodeBase64=function(){throw new Error("nacl.util moved into separate package: https://github.com/dchest/tweetnacl-util-js")}),r.randomBytes=function(r){var t=new Uint8Array(r);return n(t,r),t},r.secretbox=function(r,t,n){wr(r,t,n),lr(n,t);for(var e=new Uint8Array(32+r.length),o=new Uint8Array(e.length),i=0;i<r.length;i++)e[i+32]=r[i];return B(o,e,e.length,t,n),o.subarray(16)},r.secretbox.open=function(r,t,n){wr(r,t,n),lr(n,t);for(var e=new Uint8Array(16+r.length),o=new Uint8Array(e.length),i=0;i<r.length;i++)e[i+16]=r[i];return!(e.length<32)&&(0===S(o,e,e.length,t,n)&&o.subarray(32))},r.secretbox.keyLength=fr,r.secretbox.nonceLength=sr,r.secretbox.overheadLength=16,r.scalarMult=function(r,t){if(wr(r,t),32!==r.length)throw new Error("bad n size");if(32!==t.length)throw new Error("bad p size");var n=new Uint8Array(32);return I(n,r,t),n},r.scalarMult.base=function(r){if(wr(r),32!==r.length)throw new Error("bad n size");var t=new Uint8Array(32);return G(t,r),t},r.scalarMult.scalarLength=32,r.scalarMult.groupElementLength=32,r.box=function(t,n,e,o){var i=r.box.before(e,o);return r.secretbox(t,n,i)},r.box.before=function(r,t){wr(r,t),function(r,t){if(r.length!==cr)throw new Error("bad public key size");if(t.length!==ur)throw new Error("bad secret key size")}(r,t);var n=new Uint8Array(32);return j(n,r,t),n},r.box.after=r.secretbox,r.box.open=function(t,n,e,o){var i=r.box.before(e,o);return r.secretbox.open(t,n,i)},r.box.open.after=r.secretbox.open,r.box.keyPair=function(){var r=new Uint8Array(cr),t=new Uint8Array(ur);return Z(r,t),{publicKey:r,secretKey:t}},r.box.keyPair.fromSecretKey=function(r){if(wr(r),r.length!==ur)throw new Error("bad secret key size");var t=new Uint8Array(cr);return G(t,r),{publicKey:t,secretKey:new Uint8Array(r)}},r.box.publicKeyLength=cr,r.box.secretKeyLength=ur,r.box.sharedKeyLength=32,r.box.nonceLength=yr,r.box.overheadLength=r.secretbox.overheadLength,r.sign=function(r,t){if(wr(r,t),64!==t.length)throw new Error("bad secret key size");var n=new Uint8Array(64+r.length);return ir(n,r,r.length,t),n},r.sign.open=function(r,t){if(2!==arguments.length)throw new Error("nacl.sign.open accepts 2 arguments; did you mean to use nacl.sign.detached.verify?");if(wr(r,t),32!==t.length)throw new Error("bad public key size");var n=new Uint8Array(r.length),e=ar(n,r,r.length,t);if(e<0)return null;for(var o=new Uint8Array(e),i=0;i<o.length;i++)o[i]=n[i];return o},r.sign.detached=function(t,n){for(var e=r.sign(t,n),o=new Uint8Array(64),i=0;i<o.length;i++)o[i]=e[i];return o},r.sign.detached.verify=function(r,t,n){if(wr(r,t,n),64!==t.length)throw new Error("bad signature size");if(32!==n.length)throw new Error("bad public key size");var e,o=new Uint8Array(64+r.length),i=new Uint8Array(64+r.length);for(e=0;e<64;e++)o[e]=t[e];for(e=0;e<r.length;e++)o[e+64]=r[e];return ar(i,o,o.length,n)>=0},r.sign.keyPair=function(){var r=new Uint8Array(32),t=new Uint8Array(64);return tr(r,t),{publicKey:r,secretKey:t}},r.sign.keyPair.fromSecretKey=function(r){if(wr(r),64!==r.length)throw new Error("bad secret key size");for(var t=new Uint8Array(32),n=0;n<t.length;n++)t[n]=r[32+n];return{publicKey:t,secretKey:new Uint8Array(r)}},r.sign.keyPair.fromSeed=function(r){if(wr(r),32!==r.length)throw new Error("bad seed size");for(var t=new Uint8Array(32),n=new Uint8Array(64),e=0;e<32;e++)n[e]=r[e];return tr(t,n,!0),{publicKey:t,secretKey:n}},r.sign.publicKeyLength=32,r.sign.secretKeyLength=64,r.sign.seedLength=32,r.sign.signatureLength=64,r.hash=function(r){wr(r);var t=new Uint8Array(64);return H(t,r,r.length),t},r.hash.hashLength=64,r.verify=function(r,t){return wr(r,t),0!==r.length&&0!==t.length&&(r.length===t.length&&0===w(r,0,t,0,r.length))},r.setPRNG=function(r){n=r},function(){var t="undefined"!=typeof self?self.crypto||self.msCrypto:null;if(t&&t.getRandomValues){r.setPRNG(function(r,n){var e,o=new Uint8Array(n);for(e=0;e<n;e+=65536)t.getRandomValues(o.subarray(e,e+Math.min(n-e,65536)));for(e=0;e<n;e++)r[e]=o[e];vr(o)})}else"undefined"!=typeof require&&(t=require("crypto"))&&t.randomBytes&&r.setPRNG(function(r,n){var e,o=t.randomBytes(n);for(e=0;e<n;e++)r[e]=o[e];vr(o)})}()}("undefined"!=typeof module&&module.exports?module.exports:self.nacl=self.nacl||{});
+
+},{"crypto":3}]},{},[1]);
 </script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
+</body>
 </html>
